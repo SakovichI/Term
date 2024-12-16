@@ -1,0 +1,25 @@
+.breadcrumbs {
+  padding: 180px 0 0px 0;
+
+  &__link {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__link-text {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 125%;
+    color: var(--blue-text);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.container {
+}
+.title-2 {
+}

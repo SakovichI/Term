@@ -1,0 +1,15 @@
+.action {
+  margin-bottom: 60px;
+  &__wrap {
+    background: url("../img/action-bg.png") no-repeat center right / cover;
+  }
+
+  &__text {
+    max-width: 700px;
+    padding: 27px 82px;
+    font-family: var(--font-family);
+    font-size: 30px;
+    line-height: 145%;
+    color: #151515;
+  }
+}

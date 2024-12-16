@@ -1,0 +1,1066 @@
+<form class="abonement-form">
+  <div class="container">
+    <div class="tabs-entry">
+      <div class="tabs-entry__pills">
+        <button
+          type="button"
+          class="btn-reset btn form-btn active"
+          data-id="type"
+        >
+          1.Тип абонемента
+        </button>
+        <button type="button" class="btn-reset form-btn btn" data-id="design">
+          2.Дизайн
+        </button>
+        <button type="button" class="btn-reset form-btn btn" data-id="data">
+          3.Данные
+        </button>
+        <button type="button" class="btn-reset form-btn btn" data-id="confirm">
+          4.Подтверждение
+        </button>
+        <button type="button" class="btn-reset form-btn btn" data-id="pay">
+          5.Оплата
+        </button>
+      </div>
+
+      <div class="tabs-entry__panels">
+        <div id="type" class="abonement active">
+          <p class="abonement__text">
+            Выберите подходящий для Вас вариант абонемента, период действия и
+            количество
+          </p>
+          <div class="abonement__type">
+            <div class="abonement-slider__slide abonement-slide">
+              <div class="abonement-slide__wrap">
+                <img
+                  loading="lazy"
+                  src="img/abonement/img1.png"
+                  alt="abonement-img"
+                  width="178"
+                  height="178"
+                  class="abonement-slide__img"
+                />
+                <h3 class="abonement-slide__title">Основной</h3>
+                <span class="abonement-slide__subtitle"
+                  >Безлимит все дни 1 взрослый</span
+                >
+                <span class="abonement-slide__label">Период действия</span>
+                <div class="select">
+                  <div class="select__header">
+                    <span class="select__current">1 месяц</span>
+                    <div class="select__icon">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18 9L12 15L6 9"
+                          stroke="#0043A8"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="select__body">
+                    <div class="select__item">1 месяц</div>
+                    <div class="select__item">3 месяца</div>
+                    <div class="select__item">6 месяцев</div>
+                    <div class="select__item">12 месяцев</div>
+                  </div>
+                </div>
+                <span class="abonement-slide__label">Количество</span>
+                <div class="counter">
+                  <button type="button" class="btn-reset counter__minus">
+                    <svg
+                      width="16"
+                      height="2"
+                      viewBox="0 0 16 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+
+                  <span class="counter__count">1</span>
+
+                  <button type="button" class="btn-reset counter__plus">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 1C8 0.734784 7.89464 0.48043 7.70711 0.292893C7.51957 0.105357 7.26522 0 7 0C6.73478 0 6.48043 0.105357 6.29289 0.292893C6.10536 0.48043 6 0.734784 6 1V6H1C0.734784 6 0.48043 6.10536 0.292893 6.29289C0.105357 6.48043 0 6.73478 0 7C0 7.26522 0.105357 7.51957 0.292893 7.70711C0.48043 7.89464 0.734784 8 1 8H6V13C6 13.2652 6.10536 13.5196 6.29289 13.7071C6.48043 13.8946 6.73478 14 7 14C7.26522 14 7.51957 13.8946 7.70711 13.7071C7.89464 13.5196 8 13.2652 8 13V8H13C13.2652 8 13.5196 7.89464 13.7071 7.70711C13.8946 7.51957 14 7.26522 14 7C14 6.73478 13.8946 6.48043 13.7071 6.29289C13.5196 6.10536 13.2652 6 13 6H8V1Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <span class="abonement-slide__price">9850 </span>
+                <button
+                  type="button"
+                  class="btn-reset abonement-slide__btn-select"
+                >
+                  <div class="abonement-slide__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-slider__slide abonement-slide">
+              <div class="abonement-slide__wrap">
+                <img
+                  loading="lazy"
+                  src="img/abonement/img2.png"
+                  alt="abonement-img"
+                  width="178"
+                  height="178"
+                  class="abonement-slide__img"
+                />
+                <h3 class="abonement-slide__title">Дневной</h3>
+                <span class="abonement-slide__subtitle"
+                  >Безлимит в будни до 17:00 1 взрослый</span
+                >
+                <span class="abonement-slide__label">Период действия</span>
+                <div class="select">
+                  <div class="select__header">
+                    <span class="select__current">1 месяц</span>
+                    <div class="select__icon">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18 9L12 15L6 9"
+                          stroke="#0043A8"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="select__body">
+                    <div class="select__item">1 месяц</div>
+                    <div class="select__item">3 месяца</div>
+                    <div class="select__item">6 месяцев</div>
+                    <div class="select__item">12 месяцев</div>
+                  </div>
+                </div>
+                <span class="abonement-slide__label">Количество</span>
+                <div class="counter">
+                  <button type="button" class="btn-reset counter__minus">
+                    <svg
+                      width="16"
+                      height="2"
+                      viewBox="0 0 16 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+
+                  <span class="counter__count">1</span>
+
+                  <button type="button" class="btn-reset counter__plus">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 1C8 0.734784 7.89464 0.48043 7.70711 0.292893C7.51957 0.105357 7.26522 0 7 0C6.73478 0 6.48043 0.105357 6.29289 0.292893C6.10536 0.48043 6 0.734784 6 1V6H1C0.734784 6 0.48043 6.10536 0.292893 6.29289C0.105357 6.48043 0 6.73478 0 7C0 7.26522 0.105357 7.51957 0.292893 7.70711C0.48043 7.89464 0.734784 8 1 8H6V13C6 13.2652 6.10536 13.5196 6.29289 13.7071C6.48043 13.8946 6.73478 14 7 14C7.26522 14 7.51957 13.8946 7.70711 13.7071C7.89464 13.5196 8 13.2652 8 13V8H13C13.2652 8 13.5196 7.89464 13.7071 7.70711C13.8946 7.51957 14 7.26522 14 7C14 6.73478 13.8946 6.48043 13.7071 6.29289C13.5196 6.10536 13.2652 6 13 6H8V1Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <span class="abonement-slide__price">8000 </span>
+                <button
+                  type="button"
+                  class="btn-reset abonement-slide__btn-select"
+                >
+                  <div class="abonement-slide__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-slider__slide abonement-slide">
+              <div class="abonement-slide__wrap">
+                <img
+                  loading="lazy"
+                  src="img/abonement/img3.png"
+                  alt="abonement-img"
+                  width="178"
+                  height="178"
+                  class="abonement-slide__img"
+                />
+                <h3 class="abonement-slide__title">Дружный</h3>
+                <span class="abonement-slide__subtitle"
+                  >Безлимит все дни 3 взрослых</span
+                >
+                <span class="abonement-slide__label">Период действия</span>
+                <div class="select">
+                  <div class="select__header">
+                    <span class="select__current">1 месяц</span>
+                    <div class="select__icon">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18 9L12 15L6 9"
+                          stroke="#0043A8"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="select__body">
+                    <div class="select__item">1 месяц</div>
+                    <div class="select__item">3 месяца</div>
+                    <div class="select__item">6 месяцев</div>
+                    <div class="select__item">12 месяцев</div>
+                  </div>
+                </div>
+                <span class="abonement-slide__label">Количество</span>
+                <div class="counter">
+                  <button type="button" class="btn-reset counter__minus">
+                    <svg
+                      width="16"
+                      height="2"
+                      viewBox="0 0 16 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+
+                  <span class="counter__count">1</span>
+
+                  <button type="button" class="btn-reset counter__plus">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 1C8 0.734784 7.89464 0.48043 7.70711 0.292893C7.51957 0.105357 7.26522 0 7 0C6.73478 0 6.48043 0.105357 6.29289 0.292893C6.10536 0.48043 6 0.734784 6 1V6H1C0.734784 6 0.48043 6.10536 0.292893 6.29289C0.105357 6.48043 0 6.73478 0 7C0 7.26522 0.105357 7.51957 0.292893 7.70711C0.48043 7.89464 0.734784 8 1 8H6V13C6 13.2652 6.10536 13.5196 6.29289 13.7071C6.48043 13.8946 6.73478 14 7 14C7.26522 14 7.51957 13.8946 7.70711 13.7071C7.89464 13.5196 8 13.2652 8 13V8H13C13.2652 8 13.5196 7.89464 13.7071 7.70711C13.8946 7.51957 14 7.26522 14 7C14 6.73478 13.8946 6.48043 13.7071 6.29289C13.5196 6.10536 13.2652 6 13 6H8V1Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <span class="abonement-slide__price">8000 </span>
+                <button
+                  type="button"
+                  class="btn-reset abonement-slide__btn-select"
+                >
+                  <div class="abonement-slide__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-slider__slide abonement-slide">
+              <div class="abonement-slide__wrap">
+                <img
+                  loading="lazy"
+                  src="img/abonement/img4.png"
+                  alt="abonement-img"
+                  width="178"
+                  height="178"
+                  class="abonement-slide__img"
+                />
+                <h3 class="abonement-slide__title">Семейный для троих</h3>
+                <span class="abonement-slide__subtitle"
+                  >Безлимит все дни 2 взрослых + 1 ребенок до 14 лет</span
+                >
+                <span class="abonement-slide__label">Период действия</span>
+                <div class="select">
+                  <div class="select__header">
+                    <span class="select__current">1 месяц</span>
+                    <div class="select__icon">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18 9L12 15L6 9"
+                          stroke="#0043A8"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="select__body">
+                    <div class="select__item">1 месяц</div>
+                    <div class="select__item">3 месяца</div>
+                    <div class="select__item">6 месяцев</div>
+                    <div class="select__item">12 месяцев</div>
+                  </div>
+                </div>
+                <span class="abonement-slide__label">Количество</span>
+                <div class="counter">
+                  <button type="button" class="btn-reset counter__minus">
+                    <svg
+                      width="16"
+                      height="2"
+                      viewBox="0 0 16 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+
+                  <span class="counter__count">1</span>
+
+                  <button type="button" class="btn-reset counter__plus">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 1C8 0.734784 7.89464 0.48043 7.70711 0.292893C7.51957 0.105357 7.26522 0 7 0C6.73478 0 6.48043 0.105357 6.29289 0.292893C6.10536 0.48043 6 0.734784 6 1V6H1C0.734784 6 0.48043 6.10536 0.292893 6.29289C0.105357 6.48043 0 6.73478 0 7C0 7.26522 0.105357 7.51957 0.292893 7.70711C0.48043 7.89464 0.734784 8 1 8H6V13C6 13.2652 6.10536 13.5196 6.29289 13.7071C6.48043 13.8946 6.73478 14 7 14C7.26522 14 7.51957 13.8946 7.70711 13.7071C7.89464 13.5196 8 13.2652 8 13V8H13C13.2652 8 13.5196 7.89464 13.7071 7.70711C13.8946 7.51957 14 7.26522 14 7C14 6.73478 13.8946 6.48043 13.7071 6.29289C13.5196 6.10536 13.2652 6 13 6H8V1Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <span class="abonement-slide__price">8000 </span>
+                <button
+                  type="button"
+                  class="btn-reset abonement-slide__btn-select"
+                >
+                  <div class="abonement-slide__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-slider__slide abonement-slide">
+              <div class="abonement-slide__wrap">
+                <img
+                  loading="lazy"
+                  src="img/abonement/img5.png"
+                  alt="abonement-img"
+                  width="178"
+                  height="178"
+                  class="abonement-slide__img"
+                />
+                <h3 class="abonement-slide__title">Семейный для четверых</h3>
+                <span class="abonement-slide__subtitle"
+                  >Безлимит все дни 2 взрослых + 2 ребенка до 14 лет</span
+                >
+                <span class="abonement-slide__label">Период действия</span>
+                <div class="select">
+                  <div class="select__header">
+                    <span class="select__current">1 месяц</span>
+                    <div class="select__icon">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18 9L12 15L6 9"
+                          stroke="#0043A8"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="select__body">
+                    <div class="select__item">1 месяц</div>
+                    <div class="select__item">3 месяца</div>
+                    <div class="select__item">6 месяцев</div>
+                    <div class="select__item">12 месяцев</div>
+                  </div>
+                </div>
+                <span class="abonement-slide__label">Количество</span>
+                <div class="counter">
+                  <button type="button" class="btn-reset counter__minus">
+                    <svg
+                      width="16"
+                      height="2"
+                      viewBox="0 0 16 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+
+                  <span class="counter__count">1</span>
+
+                  <button type="button" class="btn-reset counter__plus">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 1C8 0.734784 7.89464 0.48043 7.70711 0.292893C7.51957 0.105357 7.26522 0 7 0C6.73478 0 6.48043 0.105357 6.29289 0.292893C6.10536 0.48043 6 0.734784 6 1V6H1C0.734784 6 0.48043 6.10536 0.292893 6.29289C0.105357 6.48043 0 6.73478 0 7C0 7.26522 0.105357 7.51957 0.292893 7.70711C0.48043 7.89464 0.734784 8 1 8H6V13C6 13.2652 6.10536 13.5196 6.29289 13.7071C6.48043 13.8946 6.73478 14 7 14C7.26522 14 7.51957 13.8946 7.70711 13.7071C7.89464 13.5196 8 13.2652 8 13V8H13C13.2652 8 13.5196 7.89464 13.7071 7.70711C13.8946 7.51957 14 7.26522 14 7C14 6.73478 13.8946 6.48043 13.7071 6.29289C13.5196 6.10536 13.2652 6 13 6H8V1Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <span class="abonement-slide__price">8000 </span>
+                <button
+                  type="button"
+                  class="btn-reset abonement-slide__btn-select"
+                >
+                  <div class="abonement-slide__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-slider__slide abonement-slide">
+              <div class="abonement-slide__wrap">
+                <img
+                  loading="lazy"
+                  src="img/abonement/img6.png"
+                  alt="abonement-img"
+                  width="178"
+                  height="178"
+                  class="abonement-slide__img"
+                />
+                <h3 class="abonement-slide__title">Правильный родитель</h3>
+                <span class="abonement-slide__subtitle"
+                  >Безлимит все дни 1 взрослый + 1 ребенок до 14 лет</span
+                >
+                <span class="abonement-slide__label">Период действия</span>
+                <div class="select">
+                  <div class="select__header">
+                    <span class="select__current">1 месяц</span>
+                    <div class="select__icon">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18 9L12 15L6 9"
+                          stroke="#0043A8"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="select__body">
+                    <div class="select__item">1 месяц</div>
+                    <div class="select__item">3 месяца</div>
+                    <div class="select__item">6 месяцев</div>
+                    <div class="select__item">12 месяцев</div>
+                  </div>
+                </div>
+                <span class="abonement-slide__label">Количество</span>
+                <div class="counter">
+                  <button type="button" class="btn-reset counter__minus">
+                    <svg
+                      width="16"
+                      height="2"
+                      viewBox="0 0 16 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+
+                  <span class="counter__count">1</span>
+
+                  <button type="button" class="btn-reset counter__plus">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 1C8 0.734784 7.89464 0.48043 7.70711 0.292893C7.51957 0.105357 7.26522 0 7 0C6.73478 0 6.48043 0.105357 6.29289 0.292893C6.10536 0.48043 6 0.734784 6 1V6H1C0.734784 6 0.48043 6.10536 0.292893 6.29289C0.105357 6.48043 0 6.73478 0 7C0 7.26522 0.105357 7.51957 0.292893 7.70711C0.48043 7.89464 0.734784 8 1 8H6V13C6 13.2652 6.10536 13.5196 6.29289 13.7071C6.48043 13.8946 6.73478 14 7 14C7.26522 14 7.51957 13.8946 7.70711 13.7071C7.89464 13.5196 8 13.2652 8 13V8H13C13.2652 8 13.5196 7.89464 13.7071 7.70711C13.8946 7.51957 14 7.26522 14 7C14 6.73478 13.8946 6.48043 13.7071 6.29289C13.5196 6.10536 13.2652 6 13 6H8V1Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <span class="abonement-slide__price">8000 </span>
+                <button
+                  type="button"
+                  class="btn-reset abonement-slide__btn-select"
+                >
+                  <div class="abonement-slide__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-slider__slide abonement-slide">
+              <div class="abonement-slide__wrap">
+                <img
+                  loading="lazy"
+                  src="img/abonement/img7.png"
+                  alt="abonement-img"
+                  width="178"
+                  height="178"
+                  class="abonement-slide__img"
+                />
+                <h3 class="abonement-slide__title">Большая семья</h3>
+                <span class="abonement-slide__subtitle"
+                  >Безлимит все дни 2 взрослых + 3 ребенка до 14 лет</span
+                >
+                <span class="abonement-slide__label">Период действия</span>
+                <div class="select">
+                  <div class="select__header">
+                    <span class="select__current">1 месяц</span>
+                    <div class="select__icon">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18 9L12 15L6 9"
+                          stroke="#0043A8"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="select__body">
+                    <div class="select__item">1 месяц</div>
+                    <div class="select__item">3 месяца</div>
+                    <div class="select__item">6 месяцев</div>
+                    <div class="select__item">12 месяцев</div>
+                  </div>
+                </div>
+                <span class="abonement-slide__label">Количество</span>
+                <div class="counter">
+                  <button type="button" class="btn-reset counter__minus">
+                    <svg
+                      width="16"
+                      height="2"
+                      viewBox="0 0 16 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+
+                  <span class="counter__count">1</span>
+
+                  <button type="button" class="btn-reset counter__plus">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 1C8 0.734784 7.89464 0.48043 7.70711 0.292893C7.51957 0.105357 7.26522 0 7 0C6.73478 0 6.48043 0.105357 6.29289 0.292893C6.10536 0.48043 6 0.734784 6 1V6H1C0.734784 6 0.48043 6.10536 0.292893 6.29289C0.105357 6.48043 0 6.73478 0 7C0 7.26522 0.105357 7.51957 0.292893 7.70711C0.48043 7.89464 0.734784 8 1 8H6V13C6 13.2652 6.10536 13.5196 6.29289 13.7071C6.48043 13.8946 6.73478 14 7 14C7.26522 14 7.51957 13.8946 7.70711 13.7071C7.89464 13.5196 8 13.2652 8 13V8H13C13.2652 8 13.5196 7.89464 13.7071 7.70711C13.8946 7.51957 14 7.26522 14 7C14 6.73478 13.8946 6.48043 13.7071 6.29289C13.5196 6.10536 13.2652 6 13 6H8V1Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <span class="abonement-slide__price">8000 </span>
+                <button
+                  type="button"
+                  class="btn-reset abonement-slide__btn-select"
+                >
+                  <div class="abonement-slide__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="design" class="abonement">
+          <p class="abonement__text">Выберите дизайн будущего абонемента</p>
+          <div class="abonement__designe">
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/abonement-design1.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset abonement-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/abonement-design2.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset abonement-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/abonement-design3.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset abonement-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/abonement-design4.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset abonement-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/abonement-design5.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset abonement-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/abonement-design6.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset abonement-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/abonement-design7.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset abonement-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/abonement-design8.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset abonement-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/abonement-design9.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset abonement-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/abonement-design10.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset abonement-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/abonement-design11.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset abonement-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="data" class="abonement">
+          <p class="abonement__text">
+            Внесите данные для оформления абонемента
+          </p>
+          <div class="abonement__data">
+            <div class="abonement-data__column">
+              <h3 class="abonement-data__title">Кому отправить?</h3>
+              <label class="radio">
+                <input
+                  class="radio__input"
+                  type="radio"
+                  name="send"
+                  value="Отправить себе"
+                  checked
+                />
+                <span class="radio__value"></span>
+                <span class="radion__text">Отправить себе</span>
+              </label>
+              <label class="radio">
+                <input
+                  class="radio__input"
+                  type="radio"
+                  name="send"
+                  value="Отправить в подарок"
+                />
+                <span class="radio__value"></span>
+                <span class="radion__text">Отправить в подарок</span>
+              </label>
+              <p class="abonement-data__text">
+                Абонемент будет отправлен на email получателя
+              </p>
+            </div>
+            <div class="abonement-data__column">
+              <h3 class="abonement-data__title">Куда отправить?</h3>
+              <label class="label">
+                <span class="label__text">Ваше имя</span>
+                <input
+                  class="input-reset label__input"
+                  type="text"
+                  name="name"
+                  placeholder="Имя"
+                />
+              </label>
+              <label class="label">
+                <span class="label__text">Ваш email</span>
+                <input
+                  class="input-reset label__input"
+                  type="email"
+                  name="email"
+                  placeholder="ivanov@mail.ru"
+                />
+              </label>
+
+              <button type="button" class="btn-reset abonement-data__btn-send">
+                <span class="abonement-data__btn-text">Подтвердить </span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.029 20L8.68787 18.6589L16.4138 10.9329L0.163087 10.9329L0.163087 9.06706L16.4138 9.06706L8.68787 1.34111L10.029 8.62503e-07L19.3584 9.32945L19.9998 10L19.3584 10.6706L10.029 20Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="confirm" class="abonement">
+          <p class="abonement__text">
+            Проверьте данные и перейдите к оплате заказа
+          </p>
+          <div class="abonement-confirm abonement__confirm">
+            <h3 class="abonement-confirm__title">Данные заказа</h3>
+            <div class="abonement-confirm__column">
+              <div class="abonement-confirm__row">
+                <span class="abonement-confirm__value">
+                  Имя в абонементе:
+                  <span
+                    class="abonement-confirm__value abonement-confirm__value--bold"
+                    data-value="name"
+                  >
+                    Иван
+                  </span>
+                </span>
+                <button
+                  type="button"
+                  data-btn-reset="2"
+                  class="btn-reset abonement-confirm__btn"
+                >
+                  Изменить
+                </button>
+              </div>
+              <div class="abonement-confirm__row">
+                <span class="abonement-confirm__value">
+                  Email для отправки:
+                  <span
+                    class="abonement-confirm__value abonement-confirm__value--bold"
+                    data-value="email"
+                  >
+                    test@mail.ru
+                  </span>
+                </span>
+                <button
+                  type="button"
+                  data-btn-reset="2"
+                  class="btn-reset abonement-confirm__btn"
+                >
+                  Изменить
+                </button>
+              </div>
+              <div class="abonement-confirm__row">
+                <div class="abonement-confirm__content">
+                  <span class="abonement-confirm__value">
+                    Тип абонемента:
+                    <span
+                      class="abonement-confirm__value abonement-confirm__value--bold"
+                      data-value="type"
+                    >
+                      Основной
+                    </span>
+                  </span>
+                  <span
+                    class="abonement-confirm__subvalue"
+                    data-value="description"
+                  >
+                    Безлимит все дни. 1 взрослый
+                  </span>
+                </div>
+
+                <button
+                  type="button"
+                  data-btn-reset="0"
+                  class="btn-reset abonement-confirm__btn"
+                >
+                  Изменить
+                </button>
+              </div>
+              <div class="abonement-confirm__row">
+                <span class="abonement-confirm__value">
+                  Период абонемента:
+                  <span
+                    class="abonement-confirm__value abonement-confirm__value--bold"
+                    data-value="period"
+                  >
+                    1 месяц
+                  </span>
+                </span>
+
+                <button
+                  type="button"
+                  data-btn-reset="0"
+                  class="btn-reset abonement-confirm__btn"
+                >
+                  Изменить
+                </button>
+              </div>
+              <div class="abonement-confirm__row">
+                <span class="abonement-confirm__value">
+                  Количество:
+                  <span
+                    class="abonement-confirm__value abonement-confirm__value--bold"
+                    data-value="count"
+                  >
+                    1
+                  </span>
+                </span>
+
+                <button
+                  type="button"
+                  data-btn-reset="0"
+                  class="btn-reset abonement-confirm__btn"
+                >
+                  Изменить
+                </button>
+              </div>
+            </div>
+            <div class="abonement-confirm__column">
+              <div class="abonement-confirm__row">
+                <span class="abonement-confirm__value">
+                  Дизайн абонемента
+                </span>
+                <button
+                  type="button"
+                  data-btn-reset="1"
+                  class="btn-reset abonement-confirm__btn"
+                >
+                  Изменить
+                </button>
+              </div>
+              <img
+                loading="lazy"
+                src=""
+                alt="abonement-img"
+                class="abonement-confirm__img"
+              />
+              <div class="abonement-confirm__row abonement-confirm__row--price">
+                <span class="abonement-confirm__value">
+                  Итого:
+                  <span
+                    class="abonement-confirm__value abonement-confirm__value--bold"
+                    data-value="price"
+                  >
+                    8690 руб.
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn-reset abonement__btn-pay">
+            перейти к оплате
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

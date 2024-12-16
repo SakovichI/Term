@@ -1,0 +1,119 @@
+.reviews {
+  margin-bottom: 60px;
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__slider {
+    width: 100%;
+    overflow: hidden;
+  }
+  &__slider-inner {
+    position: relative;
+    padding: 0 80px;
+  }
+}
+.reviews-slider {
+  &__controls {
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    &:disabled {
+      opacity: 0.8;
+    }
+  }
+
+  &__btn--prev {
+    left: 0px;
+  }
+
+  &__btn--next {
+    right: 0px;
+  }
+
+  &__wrap {
+    display: flex;
+  }
+
+  &__slide {
+    flex: 0 0 auto;
+  }
+}
+.review {
+  height: max-content;
+  border: 4px solid #5caaef;
+  border-radius: 53px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.6);
+  &__title {
+    margin: 0;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 145%;
+    letter-spacing: 0.02em;
+    color: #151515;
+  }
+
+  &__subtitle {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 125%;
+    color: #6f6f6f;
+  }
+
+  &__text {
+    margin: 20px 0;
+    -webkit-line-clamp: 8;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: #151515;
+    &.active {
+      -webkit-line-clamp: unset;
+      display: block;
+      -webkit-box-orient: unset;
+    }
+  }
+
+  &__btn {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 125%;
+    color: var(--grey-link);
+    transition: 0.2s ease-in;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease-in;
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      transition: 0.2s ease-in;
+    }
+    &:hover {
+      color: var(--dark-grey-text);
+      transition: 0.2s ease-in;
+      text-decoration: underline;
+    }
+    &:focus {
+      color: var(--dark-grey-text);
+      transition: 0.2s ease-in;
+      text-decoration: underline;
+    }
+    &:active {
+      color: var(--dark-grey-text);
+      transition: 0.2s ease-in;
+      text-decoration: underline;
+    }
+  }
+}

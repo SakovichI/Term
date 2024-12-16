@@ -1,0 +1,265 @@
+.schedule {
+  margin-bottom: 60px;
+  &__inner {
+  }
+
+  &__header {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__header-tags {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  &__header-title {
+    margin-bottom: 40px;
+    flex: 1 1 100%;
+  }
+
+  &__slider {
+  }
+}
+
+.schedule-controls {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  &__btn {
+    & svg path {
+      fill: #202020;
+      transition: 0.2s ease-in;
+    }
+    &:disabled svg path {
+      fill: #9d9d9d;
+      transition: 0.2s ease-in;
+    }
+  }
+
+  &__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 125%;
+    color: #3f3f40;
+  }
+}
+
+.schedule-tags {
+  &__btn {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 14px 24px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: var(--dark-grey-text);
+    border-radius: 50px;
+    background: #fff;
+    transition: 0.2s ease-in;
+    &.active {
+      color: #fff;
+      background: #4897e0;
+      transition: 0.2s ease-in;
+      &:before {
+        border: 0.5px solid #fff;
+      }
+    }
+    &.active[data-tag="Парения"] {
+      background: #0c3498;
+      transition: 0.2s ease-in;
+    }
+    &.active[data-tag="Фитнес"] {
+      background: #0c9873;
+      transition: 0.2s ease-in;
+    }
+    &.active[data-tag="Мастер-классы"] {
+      background: #ffc711;
+      transition: 0.2s ease-in;
+    }
+    &.active[data-tag="Анимация"] {
+      background: #e400ab;
+      transition: 0.2s ease-in;
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+    &[data-tag="Все"] {
+      &::before {
+        background-color: #4897e0;
+      }
+    }
+    &[data-tag="Парения"] {
+      &::before {
+        background-color: #0c3498;
+      }
+    }
+    &[data-tag="Фитнес"] {
+      &::before {
+        background-color: #0c9873;
+      }
+    }
+    &[data-tag="Мастер-классы"] {
+      &::before {
+        background-color: #ffc711;
+      }
+    }
+    &[data-tag="Анимация"] {
+      &::before {
+        background-color: #e400ab;
+      }
+    }
+  }
+}
+
+.schedule-slider {
+  overflow: hidden;
+  &__wrap {
+    display: flex;
+  }
+
+  &__slide {
+    flex: 0 0 auto;
+  }
+}
+.schedule-table {
+  &__title {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__header {
+    width: 100%;
+    display: flex;
+  }
+
+  &__header-title {
+    flex: 1 1 30%;
+    padding: 12px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.8);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 125%;
+    text-align: center;
+    color: #636363;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+    &:first-child {
+      flex: 0 0 137px;
+      border-left: 1px solid #dadada;
+    }
+    &:last-child {
+      flex: 0 0 252px;
+    }
+    &:nth-child(2) {
+      flex: 1 1 60%;
+    }
+  }
+
+  &__row {
+    width: 100%;
+    display: flex;
+    &[data-tag-row="Парения"] .schedule-table__value {
+      &::before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #0c3498;
+      }
+    }
+    &[data-tag-row="Фитнес"] .schedule-table__value {
+      &::before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #0c9873;
+      }
+    }
+    &[data-tag-row="Мастер-классы"] .schedule-table__value {
+      &::before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #ffc711;
+      }
+    }
+    &[data-tag-row="Анимация"] .schedule-table__value {
+      &::before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #e400ab;
+      }
+    }
+    & span {
+      flex: 1 1 30%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 36px;
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.4);
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 140%;
+
+      text-align: center;
+      border-top: 1px solid #dadada;
+      border-bottom: 1px solid #dadada;
+      border-right: 1px solid #dadada;
+      &:first-child {
+        flex: 0 0 137px;
+        border-left: 1px solid #dadada;
+      }
+      &:last-child {
+        flex: 0 0 252px;
+      }
+      &:nth-child(2) {
+        flex: 1 1 60%;
+      }
+    }
+  }
+
+  &__time {
+    color: var(--dark-grey-text);
+  }
+
+  &__value {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--dark-grey-text);
+  }
+
+  &__place {
+    color: var(--dark-grey-text);
+  }
+
+  &__price {
+    color: #008d61;
+  }
+}

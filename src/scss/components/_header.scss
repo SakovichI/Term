@@ -1,0 +1,196 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  &__wrap {
+    padding: 40px 50px 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 16px 0 rgba(74, 86, 91, 0.6);
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+  }
+
+  &__logo {
+    flex: 1 0 auto;
+  }
+
+  &__location {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+
+  &__location-icon {
+    flex: 1 0 auto;
+  }
+
+  &__location-text {
+    max-width: 320px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+}
+.header-control {
+  &__item {
+    padding: 16px 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 87px;
+    box-shadow: 2px 2px 8px 0 rgba(0, 17, 27, 0.3);
+    background: radial-gradient(
+      333.85% 133.49% at 1.07% 13.33%,
+      #1897ff 0%,
+      #32bbff 65.47%
+    );
+    transition: 0.2s ease-in;
+    &:hover {
+      box-shadow: 2px 2px 24px 0 rgba(0, 17, 27, 0.7);
+      background: radial-gradient(
+        333.85% 133.49% at 1.07% 13.33%,
+        #1897ff 0%,
+        #1897ff 100%
+      );
+      transition: 0.2s ease-in;
+    }
+    &:focus {
+      box-shadow: 2px 2px 24px 0 rgba(0, 17, 27, 0.7);
+      background: radial-gradient(
+        333.85% 133.49% at 1.07% 13.33%,
+        #007ce2 0%,
+        #007ce2 100%
+      );
+      transition: 0.2s ease-in;
+    }
+    &:active {
+      box-shadow: 2px 2px 24px 0 rgba(0, 17, 27, 0.7);
+      background: radial-gradient(
+        333.85% 133.49% at 1.07% 13.33%,
+        #007ce2 0%,
+        #007ce2 100%
+      );
+      transition: 0.2s ease-in;
+    }
+    &:disabled {
+      box-shadow: 2px 2px 8px 0 rgba(0, 17, 27, 0.6);
+      background: radial-gradient(
+        333.85% 133.49% at 1.07% 13.33%,
+        #1897ff 0%,
+        #32bbff 65.47%
+      );
+      transition: 0.2s ease-in;
+    }
+
+    &--orange {
+      box-shadow: 2px 2px 8px 0 rgba(0, 17, 27, 0.4);
+      background: radial-gradient(
+        486.41% 219.97% at 14.73% 0%,
+        #ff9d00 0%,
+        #ffbf35 54.08%,
+        #ffc870 100%
+      );
+      &:hover {
+        box-shadow: 2px 2px 24px 0 rgba(0, 17, 27, 0.7);
+        background: radial-gradient(
+          486.41% 219.97% at 14.73% 0%,
+          #ff9d00 0%,
+          #ff9d00 100%
+        );
+        transition: 0.2s ease-in;
+      }
+      &:focus {
+        box-shadow: 2px 2px 24px 0 rgba(0, 17, 27, 0.7);
+        background: radial-gradient(
+          486.41% 219.97% at 14.73% 0%,
+          #f80 0%,
+          #f80 100%
+        );
+        transition: 0.2s ease-in;
+      }
+      &:active {
+        box-shadow: 2px 2px 24px 0 rgba(0, 17, 27, 0.7);
+        background: radial-gradient(
+          486.41% 219.97% at 14.73% 0%,
+          #f80 0%,
+          #f80 100%
+        );
+        transition: 0.2s ease-in;
+      }
+      &:disabled {
+        box-shadow: 2px 2px 8px 0 rgba(0, 17, 27, 0.4);
+        background: radial-gradient(
+          486.41% 219.97% at 14.73% 0%,
+          #ff9d00 0%,
+          #ffbf35 54.08%,
+          #ffc870 100%
+        );
+        transition: 0.2s ease-in;
+      }
+    }
+  }
+
+  &__item-icon {
+    flex: 1 0 auto;
+  }
+
+  &__item-text {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__burger {
+    flex: 1 0 auto;
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    box-shadow: 2px 2px 4px 0 rgba(0, 17, 27, 0.8);
+    background: radial-gradient(
+      127.93% 127.93% at 40% 12.5%,
+      #216eb4 0%,
+      #0c75d3 41%,
+      #3ea1fb 68.5%
+    );
+    transition: 0.2s ease-in;
+    &:hover {
+      box-shadow: 2px 2px 24px 0 rgba(0, 17, 27, 0.7);
+      transition: 0.2s ease-in;
+    }
+    &:focus {
+      box-shadow: 2px 2px 24px 0 rgba(0, 17, 27, 0.7);
+      transition: 0.2s ease-in;
+    }
+    &:active {
+      box-shadow: 2px 2px 24px 0 rgba(0, 17, 27, 0.7);
+      transition: 0.2s ease-in;
+    }
+  }
+}

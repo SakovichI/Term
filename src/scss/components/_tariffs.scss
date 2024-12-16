@@ -1,0 +1,208 @@
+.tariffs {
+  padding-bottom: 80px;
+  &__slider {
+  }
+}
+.tabs {
+  &__nav {
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 100px;
+    background: linear-gradient(89deg, #5198e0 0%, #0f7ce1 100%);
+  }
+
+  &__nav-item {
+  }
+
+  &__nav-btn {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.2s ease-in;
+    padding: 8px 16px;
+    border-radius: 50px;
+    background: transparent;
+    transition: 0.2s ease-in;
+    &:focus {
+      background: #fff;
+      color: #2b478e;
+      transition: 0.2s ease-in;
+    }
+    &:hover {
+      background: #fff;
+      color: #2b478e;
+      transition: 0.2s ease-in;
+    }
+    &--active {
+      background: #fff;
+      color: #2b478e;
+      transition: 0.2s ease-in;
+    }
+  }
+
+  &__content {
+  }
+
+  &__panel {
+    &--active {
+      animation: tabsOpen 0.4s ease-in;
+    }
+  }
+}
+@keyframes tabsOpen {
+  from {
+    transform: translateX(400px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.tariffs-slider {
+  margin-top: 75px;
+  position: relative;
+  &__controls {
+    display: none;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    & svg path {
+      fill: #202020;
+      transition: 0.2s ease-in;
+    }
+    &:disabled {
+      & svg path {
+        fill: #9d9d9d;
+        transition: 0.2s ease-in;
+      }
+    }
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+  }
+
+  &__slide {
+    box-shadow: 4px 4px 16px 0 rgba(203, 210, 216, 0.4);
+    border-radius: 40px;
+  }
+}
+.tariffs-slide {
+  position: relative;
+  &:nth-child(1) {
+    background: #fff url("../img/tariffs-slider/slide1-bg.png") no-repeat center /
+      cover;
+  }
+  &:nth-child(2) {
+    background: #fff url("../img/tariffs-slider/slide2-bg.png") no-repeat center /
+      cover;
+  }
+  &:nth-child(3) {
+    background: #fff url("../img/tariffs-slider/slide3-bg.png") no-repeat center /
+      cover;
+  }
+  &__img {
+    position: absolute;
+    top: -37px;
+    left: -20px;
+    overflow: visible;
+  }
+
+  &__wrap {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 110%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+  }
+
+  &__subtitle {
+    margin: 0 0 50px 0;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #2d2d2d;
+  }
+
+  &__item {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item-text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--dark-blue-text);
+    &--bold {
+      font-weight: 600;
+    }
+  }
+  &__item-column {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__item-line {
+    border: 2px solid #368ddd;
+  }
+
+  &__item-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    flex: 1 1 100%;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 146%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--dark-blue-text);
+  }
+
+  &__footer {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 125%;
+    text-align: center;
+    color: #474747;
+  }
+}

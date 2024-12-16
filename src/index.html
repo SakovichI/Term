@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+
+  <body class="page__body">
+    @include('partials/burger-menu.html')
+    <div
+      class="site-container"
+      style="background: url('img/back-pc.png') no-repeat center / cover"
+    >
+      @include('partials/header.html')
+
+      <main class="main">
+        @include('partials/hero.html') @include('partials/map.html')
+        @include('partials/tariffs.html') @include('partials/blog.html')
+        @include('partials/action.html') @include('partials/schedule.html')
+        @include('partials/reviews.html') @include('partials/news.html')
+        @include('partials/contacts.html')
+      </main>
+      @include('partials/footer.html')
+      <!-- @include('html/h1.html') пример include -->
+    </div>
+  </body>
+</html>
