@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>Термы Видное</title>
+  <link
+    rel="preload"
+    href="fonts/Montserrat-Medium.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Montserrat-SemiBold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Montserrat-Bold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Montserrat-ExtraBold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/ElMessiri-Medium.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/ElMessiri-SemiBold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/ElMessiri-Bold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+  />
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <div class="burger-menu" data-menu>
+  <div class="burger-menu__head">
+    <a href="#" class="burger-menu__logo">
+      <img
+        loading="lazy"
+        src="img/logo.png"
+        alt="logo"
+        width="150"
+        height="72"
+      />
+    </a>
+
+    <button type="button" class="btn-reset burger-menu__btn" data-menu-item>
+      <svg
+        width="48"
+        height="48"
+        viewBox="0 0 48 48"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M38 12.82L35.18 10L24 21.18L12.82 10L10 12.82L21.18 24L10 35.18L12.82 38L24 26.82L35.18 38L38 35.18L26.82 24L38 12.82Z"
+          fill="#202020"
+        />
+      </svg>
+    </button>
+  </div>
+  <div class="burger-menu__wrap">
+    <ul class="burger-menu__list">
+      <li class="burger-menu__item" data-menu-item>
+        <a href="#map" class="burger-menu__link">карта комплекса</a>
+      </li>
+      <li class="burger-menu__item" data-menu-item>
+        <a href="#tariffs" class="burger-menu__link">тарифы</a>
+      </li>
+      <li class="burger-menu__item" data-menu-item>
+        <a href="#object" class="burger-menu__link">Акватория</a>
+      </li>
+      <li class="burger-menu__item" data-menu-item>
+        <a href="#schedule" class="burger-menu__link">расписание</a>
+      </li>
+      <li class="burger-menu__item" data-menu-item>
+        <a href="#reviews" class="burger-menu__link">отзывы</a>
+      </li>
+      <li class="burger-menu__item" data-menu-item>
+        <a href="#blog" class="burger-menu__link">новости</a>
+      </li>
+      <li class="burger-menu__item" data-menu-item>
+        <a href="#contacts" class="burger-menu__link">контакты</a>
+      </li>
+    </ul>
+    <div class="burger-menu__contacts menu-contacts">
+      <div class="menu-contacts__item">
+        <span class="menu-contacts__item-label">Адрес</span>
+        <span class="menu-contacts__item-text"
+          >г.Видное, ул. Олимпийская, д. 6, к.1</span
+        >
+      </div>
+      <div class="menu-contacts__item">
+        <span class="menu-contacts__item-label">Ресепшн</span>
+        <a href="tel:+74952254208" class="menu-contacts__item-link"
+          >+7 495 225-42-08</a
+        >
+      </div>
+      <div class="menu-contacts__item">
+        <span class="menu-contacts__item-label">График работы</span>
+        <span class="menu-contacts__item-text">пн-вс: 8:00–24:00</span>
+      </div>
+      <div class="menu-contacts__item">
+        <span class="menu-contacts__item-label">Email</span>
+        <a href="mailto:termy.vidnoe@yandex.ru" class="menu-contacts__item-link"
+          >termy.vidnoe@yandex.ru</a
+        >
+      </div>
+      <div class="menu-contacts__item">
+        <span class="menu-contacts__item-label">Мы в соц.сетях</span>
+        <div class="menu-contacts__item-social">
+          <a href="#" class="menu-contacts__item-social-link">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M45.763 35.202C43.966 31.968 39.337 28.082 37.426 26.391C36.903 25.928 36.847 25.127 37.323 24.615C40.97 20.696 43.887 16.193 44.891 13.472C45.334 12.27 44.417 11 43.125 11H39.372C38.135 11 37.411 11.444 37.066 12.151C34.035 18.362 31.435 21.05 29.615 22.621C28.596 23.501 27.007 22.772 27.007 21.433C27.007 18.853 27.007 15.518 27.007 13.153C27.007 12.006 26.069 11.078 24.912 11.078L18.056 11C17.193 11 16.7 11.977 17.218 12.662L18.35 14.287C18.776 14.85 19.006 15.535 19.006 16.238L19 23.556C19 24.829 17.457 25.451 16.541 24.559C13.442 21.541 10.753 15.378 9.78501 12.431C9.50501 11.578 8.70601 11.002 7.80001 11L4.10301 10.991C2.71601 10.991 1.70201 12.306 2.07901 13.63C5.45701 25.487 12.388 36.767 24.74 37.99C25.957 38.11 27.007 37.13 27.007 35.917V32.071C27.007 30.968 27.872 30.02 28.984 29.992C29.023 29.991 29.062 29.991 29.101 29.991C32.368 29.991 36.027 34.746 37.307 36.97C37.675 37.61 38.363 38 39.107 38H44.08C45.531 38 46.462 36.461 45.763 35.202Z"
+                fill="#2B478E"
+              />
+            </svg>
+          </a>
+          <a href="#" class="menu-contacts__item-social-link">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M44.2915 6.28997C43.5715 5.67941 42.4406 5.59205 41.2713 6.06149H41.2694C40.0397 6.55493 6.45887 20.9588 5.09183 21.5473C4.84319 21.6337 2.67167 22.4439 2.89535 24.2487C3.09503 25.8759 4.84031 26.5498 5.05343 26.6276L13.5907 29.5508C14.1571 31.4362 16.2451 38.3924 16.7069 39.8785C16.9949 40.8049 17.4643 42.0221 18.287 42.2727C19.0089 42.5511 19.727 42.2967 20.1917 41.9319L25.4112 37.0906L33.8371 43.6618L34.0377 43.7818C34.6099 44.0353 35.1581 44.162 35.6813 44.162C36.0854 44.162 36.4733 44.0861 36.8438 43.9345C38.1062 43.4161 38.6112 42.2132 38.664 42.0769L44.9577 9.36293C45.3417 7.61573 44.808 6.72677 44.2915 6.28997ZM21.12 30.7201L18.24 38.4001L15.36 28.8001L37.44 12.4801L21.12 30.7201Z"
+                fill="#2B478E"
+              />
+            </svg>
+          </a>
+          <a href="#" class="menu-contacts__item-social-link">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M24 4.80005C13.3968 4.80005 4.80005 13.3968 4.80005 24C4.80005 27.602 5.8118 30.9602 7.53755 33.8407L4.97192 43.2001L14.5313 40.6907C17.327 42.2801 20.5544 43.2001 24 43.2001C34.6032 43.2001 43.2001 34.6032 43.2001 24C43.2001 13.3968 34.6032 4.80005 24 4.80005ZM17.4282 15.0438C17.7402 15.0438 18.0607 15.0419 18.3376 15.0563C18.68 15.0643 19.0526 15.0894 19.4094 15.8782C19.8334 16.8158 20.7566 19.1679 20.875 19.4063C20.9934 19.6447 21.0773 19.9255 20.9125 20.2376C20.7557 20.5575 20.6742 20.7512 20.4438 21.0344C20.2054 21.3096 19.9442 21.6514 19.7282 21.8594C19.4898 22.0978 19.2436 22.3592 19.5188 22.8344C19.794 23.3096 20.7497 24.8674 22.1625 26.125C23.9785 27.7474 25.5107 28.246 25.9875 28.4844C26.4643 28.7228 26.7405 28.6857 27.0157 28.3657C27.2989 28.0537 28.205 26.9831 28.525 26.5063C28.837 26.0295 29.1556 26.112 29.5875 26.2688C30.0259 26.4256 32.3639 27.5773 32.8407 27.8157C33.3175 28.0541 33.63 28.1721 33.75 28.3657C33.8732 28.5657 33.8734 29.5178 33.4782 30.6282C33.083 31.737 31.1423 32.8092 30.2719 32.8844C29.3935 32.966 28.5737 33.2792 24.5625 31.7C19.7241 29.7944 16.6728 24.8388 16.4344 24.5188C16.196 24.2068 14.4969 21.9423 14.4969 19.6063C14.4969 17.2623 15.7259 16.1143 16.1563 15.6375C16.5947 15.1607 17.1082 15.0438 17.4282 15.0438Z"
+                fill="#2B478E"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="menu-contacts__item">
+        <span class="menu-contacts__item-label">Как добраться</span>
+        <div class="menu-contacts__item-map">
+          <a href="#" class="menu-contacts__item-map-link">
+            <img
+              loading="lazy"
+              src="img/yandex.png"
+              alt="yandex"
+              width="217"
+              height="36"
+            />
+          </a>
+          <a href="#" class="menu-contacts__item-map-link">
+            <img
+              loading="lazy"
+              src="img/2gis.png"
+              alt="2gis"
+              width="129"
+              height="36"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="site-container" style="background: #eefdff">
+      <header class="header">
+  <div class="header__wrap">
+    <div class="header__left">
+      <a href="#" class="header__logo">
+        <img
+          loading="lazy"
+          src="img/logo.png"
+          alt="logo"
+          width="120"
+          height="65"
+        />
+      </a>
+      <div class="header__location">
+        <svg
+          class="header__location-icon"
+          width="48"
+          height="48"
+          viewBox="0 0 48 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M22.8016 7C16.836 7 12 11.836 12 17.8016C12 23.9215 18.7958 32.9548 21.6073 36.4283C22.2245 37.1906 23.3788 37.1906 23.996 36.4283C26.8075 32.9548 33.6033 23.9215 33.6033 17.8016C33.6033 11.836 28.7672 7 22.8016 7ZM22.8016 21.6594C20.6706 21.6594 18.9439 19.9326 18.9439 17.8016C18.9439 15.6706 20.6706 13.9439 22.8016 13.9439C24.9326 13.9439 26.6594 15.6706 26.6594 17.8016C26.6594 19.9326 24.9326 21.6594 22.8016 21.6594Z"
+            fill="#1A71BF"
+          />
+        </svg>
+        <span class="header__location-text"
+          >г.Видное, ул. Олимпийская, д. 6, корп.1 пн — вс: 8:00 — 24:00</span
+        >
+      </div>
+    </div>
+
+    <div class="header__controls header-control">
+      <a href="certificate-pay.html" class="header-control__item">
+        <svg
+          class="header-control__item-icon"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5.83335 1.66675C4.4564 1.66675 3.33335 2.78979 3.33335 4.16675C3.33335 4.45972 3.3952 4.73966 3.4896 5.00008H3.33335C2.41213 5.00008 1.66669 5.74552 1.66669 6.66675V10.0001H9.16669V5.00008H10.8334V10.0001H18.3334V6.66675C18.3334 5.74552 17.5879 5.00008 16.6667 5.00008H16.5104C16.6048 4.73966 16.6667 4.45972 16.6667 4.16675C16.6667 2.78979 15.5436 1.66675 14.1667 1.66675C12.985 1.66675 11.8425 2.47078 10.9636 3.33341H9.03648C8.15757 2.47078 7.01499 1.66675 5.83335 1.66675ZM5.83335 3.33341C6.58531 3.33341 7.53257 4.13094 8.30731 5.00008H5.83335C5.37437 5.00008 5.00002 4.62573 5.00002 4.16675C5.00002 3.70776 5.37437 3.33341 5.83335 3.33341ZM14.1667 3.33341C14.6257 3.33341 15 3.70776 15 4.16675C15 4.62573 14.6257 5.00008 14.1667 5.00008H11.6927C12.4447 4.15698 13.4082 3.33341 14.1667 3.33341ZM1.66669 11.6667V16.6667C1.66669 17.588 2.41213 18.3334 3.33335 18.3334H9.16669V11.6667H1.66669ZM10.8334 11.6667V18.3334H16.6667C17.5879 18.3334 18.3334 17.588 18.3334 16.6667V11.6667H10.8334Z"
+            fill="white"
+          />
+        </svg>
+        <span class="header-control__item-text">Подарочный сертификат</span>
+      </a>
+      <a
+        href="abonement-pay.html"
+        class="header-control__item header-control__item--orange"
+      >
+        <svg
+          class="header-control__item-icon"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.9948 0L10.2604 2.76042L17.2396 9.73958L20 7.00521L18.2552 5.26042C17.8385 5.59245 17.2493 5.83333 16.6667 5.83333C15.2507 5.83333 14.1667 4.74935 14.1667 3.33333C14.1667 2.75065 14.4076 2.16146 14.7396 1.74479L12.9948 0ZM9.42708 3.59375L0 12.9948L1.74479 14.7396C2.16146 14.4076 2.75065 14.1667 3.33333 14.1667C4.74935 14.1667 5.83333 15.2507 5.83333 16.6667C5.83333 17.2493 5.59245 17.8385 5.26042 18.2552L7.00521 20L16.4062 10.5729L9.42708 3.59375Z"
+            fill="white"
+          />
+        </svg>
+        <span class="header-control__item-text">КУПИТЬ Абонемент</span>
+      </a>
+      <button
+        class="btn-reset header-control__burger"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        data-burger
+      >
+        <svg
+          width="36"
+          height="36"
+          viewBox="0 0 36 36"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g filter="url(#filter0_d_2010_306)">
+            <path
+              d="M5.5 8C4.67157 8 4 8.67157 4 9.5C4 10.3284 4.67157 11 5.5 11H30.5C31.3284 11 32 10.3284 32 9.5C32 8.67157 31.3284 8 30.5 8H5.5ZM5.5 17C4.67157 17 4 17.6716 4 18.5C4 19.3284 4.67157 20 5.5 20H30.5C31.3284 20 32 19.3284 32 18.5C32 17.6716 31.3284 17 30.5 17H5.5ZM5.5 26C4.67157 26 4 26.6716 4 27.5C4 28.3284 4.67157 29 5.5 29H30.5C31.3284 29 32 28.3284 32 27.5C32 26.6716 31.3284 26 30.5 26H5.5Z"
+              fill="white"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_d_2010_306"
+              x="3"
+              y="7"
+              width="32"
+              height="25"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha"
+              />
+              <feOffset dx="1" dy="1" />
+              <feGaussianBlur stdDeviation="1" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0.00392157 0 0 0 0 0.796078 0 0 0 0 0.878431 0 0 0 1 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_2010_306"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow_2010_306"
+                result="shape"
+              />
+            </filter>
+          </defs>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+      <main class="main">
+        <div class="breadcrumbs">
+  <div class="container">
+    <a href="/" class="breadcrumbs__link">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M9.9709 20L11.312 18.6589L3.58606 10.9329L19.8368 10.9329L19.8368 9.06706L3.58606 9.06706L11.312 1.34111L9.9709 8.62503e-07L0.641456 9.32945L5.63462e-05 10L0.641456 10.6706L9.9709 20Z"
+          fill="#0043A8"
+        />
+      </svg>
+      <span class="breadcrumbs__link-text">Вернуться</span>
+    </a>
+    <h2 class="title-2">Купить сертификат</h2>
+  </div>
+</div>
+
+        <form class="certificate-form certificate">
+  <div class="container">
+    <div class="tabs-entry">
+      <div class="tabs-entry__pills">
+        <button
+          type="button"
+          class="btn-reset btn form-btn-certificate active"
+          data-id="type"
+        >
+          1.Тип сертификата
+        </button>
+        <button
+          type="button"
+          class="btn-reset btn form-btn-certificate"
+          data-id="design"
+        >
+          2.Дизайн
+        </button>
+        <button
+          type="button"
+          class="btn-reset btn form-btn-certificate"
+          data-id="data"
+        >
+          3.Данные
+        </button>
+        <button
+          type="button"
+          class="btn-reset btn form-btn-certificate"
+          data-id="confirm"
+        >
+          4.Подтверждение
+        </button>
+        <button
+          type="button"
+          class="btn-reset btn form-btn-certificate"
+          data-id="pay"
+        >
+          5.Оплата
+        </button>
+      </div>
+
+      <div class="tabs-entry__panels">
+        <div id="type" class="abonement active">
+          <p class="abonement__text">
+            Выберите подходящий для Вас номинал сертификата
+          </p>
+          <div class="certificate__type">
+            <div class="certeficat-slider__slide certeficat-slide">
+              <div class="certeficat-slide__wrap">
+                <span class="certeficat-slide__pretitle">НОМИНАЛ</span>
+                <span class="certeficat-slide__title">500</span>
+                <span class="certeficat-slide__subtitle">РУБЛЕЙ</span>
+                <span class="certeficat-slide__label">Количество</span>
+                <div class="counter">
+                  <button type="button" class="btn-reset counter__minus">
+                    <svg
+                      width="16"
+                      height="2"
+                      viewBox="0 0 16 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+
+                  <span class="counter__count">1</span>
+
+                  <button type="button" class="btn-reset counter__plus">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 1C8 0.734784 7.89464 0.48043 7.70711 0.292893C7.51957 0.105357 7.26522 0 7 0C6.73478 0 6.48043 0.105357 6.29289 0.292893C6.10536 0.48043 6 0.734784 6 1V6H1C0.734784 6 0.48043 6.10536 0.292893 6.29289C0.105357 6.48043 0 6.73478 0 7C0 7.26522 0.105357 7.51957 0.292893 7.70711C0.48043 7.89464 0.734784 8 1 8H6V13C6 13.2652 6.10536 13.5196 6.29289 13.7071C6.48043 13.8946 6.73478 14 7 14C7.26522 14 7.51957 13.8946 7.70711 13.7071C7.89464 13.5196 8 13.2652 8 13V8H13C13.2652 8 13.5196 7.89464 13.7071 7.70711C13.8946 7.51957 14 7.26522 14 7C14 6.73478 13.8946 6.48043 13.7071 6.29289C13.5196 6.10536 13.2652 6 13 6H8V1Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <span class="certeficat-slide__discount">СКИДКА 10%</span>
+                <span class="certeficat-slide__price">450 </span>
+                <button
+                  type="button"
+                  class="btn-reset certeficat-slide__btn-select"
+                >
+                  <div class="certeficat-slide__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="certeficat-slider__slide certeficat-slide">
+              <div class="certeficat-slide__wrap">
+                <span class="certeficat-slide__pretitle">НОМИНАЛ</span>
+                <span class="certeficat-slide__title">1000</span>
+                <span class="certeficat-slide__subtitle">РУБЛЕЙ</span>
+                <span class="certeficat-slide__label">Количество</span>
+                <div class="counter">
+                  <button type="button" class="btn-reset counter__minus">
+                    <svg
+                      width="16"
+                      height="2"
+                      viewBox="0 0 16 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+
+                  <span class="counter__count">1</span>
+
+                  <button type="button" class="btn-reset counter__plus">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 1C8 0.734784 7.89464 0.48043 7.70711 0.292893C7.51957 0.105357 7.26522 0 7 0C6.73478 0 6.48043 0.105357 6.29289 0.292893C6.10536 0.48043 6 0.734784 6 1V6H1C0.734784 6 0.48043 6.10536 0.292893 6.29289C0.105357 6.48043 0 6.73478 0 7C0 7.26522 0.105357 7.51957 0.292893 7.70711C0.48043 7.89464 0.734784 8 1 8H6V13C6 13.2652 6.10536 13.5196 6.29289 13.7071C6.48043 13.8946 6.73478 14 7 14C7.26522 14 7.51957 13.8946 7.70711 13.7071C7.89464 13.5196 8 13.2652 8 13V8H13C13.2652 8 13.5196 7.89464 13.7071 7.70711C13.8946 7.51957 14 7.26522 14 7C14 6.73478 13.8946 6.48043 13.7071 6.29289C13.5196 6.10536 13.2652 6 13 6H8V1Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <span class="certeficat-slide__discount">СКИДКА 10%</span>
+                <span class="certeficat-slide__price">900</span>
+                <button
+                  type="button"
+                  class="btn-reset certeficat-slide__btn-select"
+                >
+                  <div class="certeficat-slide__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="certeficat-slider__slide certeficat-slide">
+              <div class="certeficat-slide__wrap">
+                <span class="certeficat-slide__pretitle">НОМИНАЛ</span>
+                <span class="certeficat-slide__title">2000</span>
+                <span class="certeficat-slide__subtitle">РУБЛЕЙ</span>
+                <span class="certeficat-slide__label">Количество</span>
+                <div class="counter">
+                  <button type="button" class="btn-reset counter__minus">
+                    <svg
+                      width="16"
+                      height="2"
+                      viewBox="0 0 16 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+
+                  <span class="counter__count">1</span>
+
+                  <button type="button" class="btn-reset counter__plus">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 1C8 0.734784 7.89464 0.48043 7.70711 0.292893C7.51957 0.105357 7.26522 0 7 0C6.73478 0 6.48043 0.105357 6.29289 0.292893C6.10536 0.48043 6 0.734784 6 1V6H1C0.734784 6 0.48043 6.10536 0.292893 6.29289C0.105357 6.48043 0 6.73478 0 7C0 7.26522 0.105357 7.51957 0.292893 7.70711C0.48043 7.89464 0.734784 8 1 8H6V13C6 13.2652 6.10536 13.5196 6.29289 13.7071C6.48043 13.8946 6.73478 14 7 14C7.26522 14 7.51957 13.8946 7.70711 13.7071C7.89464 13.5196 8 13.2652 8 13V8H13C13.2652 8 13.5196 7.89464 13.7071 7.70711C13.8946 7.51957 14 7.26522 14 7C14 6.73478 13.8946 6.48043 13.7071 6.29289C13.5196 6.10536 13.2652 6 13 6H8V1Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <span class="certeficat-slide__discount">СКИДКА 10%</span>
+                <span class="certeficat-slide__price">1800</span>
+                <button
+                  type="button"
+                  class="btn-reset certeficat-slide__btn-select"
+                >
+                  <div class="certeficat-slide__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="certeficat-slider__slide certeficat-slide">
+              <div class="certeficat-slide__wrap">
+                <span class="certeficat-slide__pretitle">НОМИНАЛ</span>
+                <span class="certeficat-slide__title">3000</span>
+                <span class="certeficat-slide__subtitle">РУБЛЕЙ</span>
+                <span class="certeficat-slide__label">Количество</span>
+                <div class="counter">
+                  <button type="button" class="btn-reset counter__minus">
+                    <svg
+                      width="16"
+                      height="2"
+                      viewBox="0 0 16 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+
+                  <span class="counter__count">1</span>
+
+                  <button type="button" class="btn-reset counter__plus">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 1C8 0.734784 7.89464 0.48043 7.70711 0.292893C7.51957 0.105357 7.26522 0 7 0C6.73478 0 6.48043 0.105357 6.29289 0.292893C6.10536 0.48043 6 0.734784 6 1V6H1C0.734784 6 0.48043 6.10536 0.292893 6.29289C0.105357 6.48043 0 6.73478 0 7C0 7.26522 0.105357 7.51957 0.292893 7.70711C0.48043 7.89464 0.734784 8 1 8H6V13C6 13.2652 6.10536 13.5196 6.29289 13.7071C6.48043 13.8946 6.73478 14 7 14C7.26522 14 7.51957 13.8946 7.70711 13.7071C7.89464 13.5196 8 13.2652 8 13V8H13C13.2652 8 13.5196 7.89464 13.7071 7.70711C13.8946 7.51957 14 7.26522 14 7C14 6.73478 13.8946 6.48043 13.7071 6.29289C13.5196 6.10536 13.2652 6 13 6H8V1Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <span class="certeficat-slide__discount">СКИДКА 15%</span>
+                <span class="certeficat-slide__price">2550</span>
+                <button
+                  type="button"
+                  class="btn-reset certeficat-slide__btn-select"
+                >
+                  <div class="certeficat-slide__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="certeficat-slider__slide certeficat-slide">
+              <div class="certeficat-slide__wrap">
+                <span class="certeficat-slide__pretitle">НОМИНАЛ</span>
+                <span class="certeficat-slide__title">5000</span>
+                <span class="certeficat-slide__subtitle">РУБЛЕЙ</span>
+                <span class="certeficat-slide__label">Количество</span>
+                <div class="counter">
+                  <button type="button" class="btn-reset counter__minus">
+                    <svg
+                      width="16"
+                      height="2"
+                      viewBox="0 0 16 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+
+                  <span class="counter__count">1</span>
+
+                  <button type="button" class="btn-reset counter__plus">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 1C8 0.734784 7.89464 0.48043 7.70711 0.292893C7.51957 0.105357 7.26522 0 7 0C6.73478 0 6.48043 0.105357 6.29289 0.292893C6.10536 0.48043 6 0.734784 6 1V6H1C0.734784 6 0.48043 6.10536 0.292893 6.29289C0.105357 6.48043 0 6.73478 0 7C0 7.26522 0.105357 7.51957 0.292893 7.70711C0.48043 7.89464 0.734784 8 1 8H6V13C6 13.2652 6.10536 13.5196 6.29289 13.7071C6.48043 13.8946 6.73478 14 7 14C7.26522 14 7.51957 13.8946 7.70711 13.7071C7.89464 13.5196 8 13.2652 8 13V8H13C13.2652 8 13.5196 7.89464 13.7071 7.70711C13.8946 7.51957 14 7.26522 14 7C14 6.73478 13.8946 6.48043 13.7071 6.29289C13.5196 6.10536 13.2652 6 13 6H8V1Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <span class="certeficat-slide__discount">СКИДКА 15%</span>
+                <span class="certeficat-slide__price">4250</span>
+                <button
+                  type="button"
+                  class="btn-reset certeficat-slide__btn-select"
+                >
+                  <div class="certeficat-slide__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="certeficat-slider__slide certeficat-slide">
+              <div class="certeficat-slide__wrap">
+                <span class="certeficat-slide__pretitle">НОМИНАЛ</span>
+                <span class="certeficat-slide__title">10000</span>
+                <span class="certeficat-slide__subtitle">РУБЛЕЙ</span>
+                <span class="certeficat-slide__label">Количество</span>
+                <div class="counter">
+                  <button type="button" class="btn-reset counter__minus">
+                    <svg
+                      width="16"
+                      height="2"
+                      viewBox="0 0 16 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+
+                  <span class="counter__count">1</span>
+
+                  <button type="button" class="btn-reset counter__plus">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 1C8 0.734784 7.89464 0.48043 7.70711 0.292893C7.51957 0.105357 7.26522 0 7 0C6.73478 0 6.48043 0.105357 6.29289 0.292893C6.10536 0.48043 6 0.734784 6 1V6H1C0.734784 6 0.48043 6.10536 0.292893 6.29289C0.105357 6.48043 0 6.73478 0 7C0 7.26522 0.105357 7.51957 0.292893 7.70711C0.48043 7.89464 0.734784 8 1 8H6V13C6 13.2652 6.10536 13.5196 6.29289 13.7071C6.48043 13.8946 6.73478 14 7 14C7.26522 14 7.51957 13.8946 7.70711 13.7071C7.89464 13.5196 8 13.2652 8 13V8H13C13.2652 8 13.5196 7.89464 13.7071 7.70711C13.8946 7.51957 14 7.26522 14 7C14 6.73478 13.8946 6.48043 13.7071 6.29289C13.5196 6.10536 13.2652 6 13 6H8V1Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <span class="certeficat-slide__discount">СКИДКА 15%</span>
+                <span class="certeficat-slide__price">8500</span>
+                <button
+                  type="button"
+                  class="btn-reset certeficat-slide__btn-select"
+                >
+                  <div class="certeficat-slide__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="certeficat-slider__slide certeficat-slide">
+              <div class="certeficat-slide__wrap">
+                <span class="certeficat-slide__pretitle">НОМИНАЛ</span>
+                <span class="certeficat-slide__title">15000</span>
+                <span class="certeficat-slide__subtitle">РУБЛЕЙ</span>
+                <span class="certeficat-slide__label">Количество</span>
+                <div class="counter">
+                  <button type="button" class="btn-reset counter__minus">
+                    <svg
+                      width="16"
+                      height="2"
+                      viewBox="0 0 16 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+
+                  <span class="counter__count">1</span>
+
+                  <button type="button" class="btn-reset counter__plus">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 1C8 0.734784 7.89464 0.48043 7.70711 0.292893C7.51957 0.105357 7.26522 0 7 0C6.73478 0 6.48043 0.105357 6.29289 0.292893C6.10536 0.48043 6 0.734784 6 1V6H1C0.734784 6 0.48043 6.10536 0.292893 6.29289C0.105357 6.48043 0 6.73478 0 7C0 7.26522 0.105357 7.51957 0.292893 7.70711C0.48043 7.89464 0.734784 8 1 8H6V13C6 13.2652 6.10536 13.5196 6.29289 13.7071C6.48043 13.8946 6.73478 14 7 14C7.26522 14 7.51957 13.8946 7.70711 13.7071C7.89464 13.5196 8 13.2652 8 13V8H13C13.2652 8 13.5196 7.89464 13.7071 7.70711C13.8946 7.51957 14 7.26522 14 7C14 6.73478 13.8946 6.48043 13.7071 6.29289C13.5196 6.10536 13.2652 6 13 6H8V1Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <span class="certeficat-slide__discount">СКИДКА 15%</span>
+                <span class="certeficat-slide__price">12750</span>
+                <button
+                  type="button"
+                  class="btn-reset certeficat-slide__btn-select"
+                >
+                  <div class="certeficat-slide__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="certeficat-slider__slide certeficat-slide">
+              <div class="certeficat-slide__wrap">
+                <span class="certeficat-slide__pretitle">НОМИНАЛ</span>
+                <span class="certeficat-slide__title">20000</span>
+                <span class="certeficat-slide__subtitle">РУБЛЕЙ</span>
+                <span class="certeficat-slide__label">Количество</span>
+                <div class="counter">
+                  <button type="button" class="btn-reset counter__minus">
+                    <svg
+                      width="16"
+                      height="2"
+                      viewBox="0 0 16 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+
+                  <span class="counter__count">1</span>
+
+                  <button type="button" class="btn-reset counter__plus">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 1C8 0.734784 7.89464 0.48043 7.70711 0.292893C7.51957 0.105357 7.26522 0 7 0C6.73478 0 6.48043 0.105357 6.29289 0.292893C6.10536 0.48043 6 0.734784 6 1V6H1C0.734784 6 0.48043 6.10536 0.292893 6.29289C0.105357 6.48043 0 6.73478 0 7C0 7.26522 0.105357 7.51957 0.292893 7.70711C0.48043 7.89464 0.734784 8 1 8H6V13C6 13.2652 6.10536 13.5196 6.29289 13.7071C6.48043 13.8946 6.73478 14 7 14C7.26522 14 7.51957 13.8946 7.70711 13.7071C7.89464 13.5196 8 13.2652 8 13V8H13C13.2652 8 13.5196 7.89464 13.7071 7.70711C13.8946 7.51957 14 7.26522 14 7C14 6.73478 13.8946 6.48043 13.7071 6.29289C13.5196 6.10536 13.2652 6 13 6H8V1Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <span class="certeficat-slide__discount">СКИДКА 15%</span>
+                <span class="certeficat-slide__price">17000</span>
+                <button
+                  type="button"
+                  class="btn-reset certeficat-slide__btn-select"
+                >
+                  <div class="certeficat-slide__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="certeficat-slider__slide certeficat-slide">
+              <div class="certeficat-slide__wrap">
+                <span class="certeficat-slide__pretitle">НОМИНАЛ</span>
+                <span class="certeficat-slide__title">30000</span>
+                <span class="certeficat-slide__subtitle">РУБЛЕЙ</span>
+                <span class="certeficat-slide__label">Количество</span>
+                <div class="counter">
+                  <button type="button" class="btn-reset counter__minus">
+                    <svg
+                      width="16"
+                      height="2"
+                      viewBox="0 0 16 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+
+                  <span class="counter__count">1</span>
+
+                  <button type="button" class="btn-reset counter__plus">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8 1C8 0.734784 7.89464 0.48043 7.70711 0.292893C7.51957 0.105357 7.26522 0 7 0C6.73478 0 6.48043 0.105357 6.29289 0.292893C6.10536 0.48043 6 0.734784 6 1V6H1C0.734784 6 0.48043 6.10536 0.292893 6.29289C0.105357 6.48043 0 6.73478 0 7C0 7.26522 0.105357 7.51957 0.292893 7.70711C0.48043 7.89464 0.734784 8 1 8H6V13C6 13.2652 6.10536 13.5196 6.29289 13.7071C6.48043 13.8946 6.73478 14 7 14C7.26522 14 7.51957 13.8946 7.70711 13.7071C7.89464 13.5196 8 13.2652 8 13V8H13C13.2652 8 13.5196 7.89464 13.7071 7.70711C13.8946 7.51957 14 7.26522 14 7C14 6.73478 13.8946 6.48043 13.7071 6.29289C13.5196 6.10536 13.2652 6 13 6H8V1Z"
+                        fill="#0043A8"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <span class="certeficat-slide__discount">СКИДКА 15%</span>
+                <span class="certeficat-slide__price">25500</span>
+                <button
+                  type="button"
+                  class="btn-reset certeficat-slide__btn-select"
+                >
+                  <div class="certeficat-slide__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="design" class="abonement">
+          <p class="abonement__text">Выберите дизайн будущего сертификата</p>
+          <div class="abonement__designe">
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/certificate-design1.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset certificate-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/certificate-design2.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset certificate-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/certificate-design3.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset certificate-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/certificate-design4.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset certificate-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/certificate-design5.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset certificate-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/certificate-design6.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset certificate-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/certificate-design7.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset certificate-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/certificate-design8.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset certificate-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/certificate-design9.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset certificate-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/certificate-design10.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset certificate-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/certificate-design11.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset certificate-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/certificate-design12.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset certificate-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/certificate-design13.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset certificate-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+            <div class="abonement-design">
+              <div class="abonement-design__wrap">
+                <img
+                  loading="lazy"
+                  src="./img/designe/certificate-design14.png"
+                  alt="abonement-design"
+                  width="432"
+                  height="272"
+                />
+                <button
+                  type="button"
+                  data-btn="designe"
+                  class="btn-reset certificate-design__btn-select"
+                >
+                  <div class="abonement-design__btn-select-text">Выбрать</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="data" class="abonement">
+          <p class="abonement__text">
+            Внесите данные для оформления сертификата
+          </p>
+          <div class="abonement__data">
+            <div class="abonement-data__column">
+              <h3 class="abonement-data__title">Кому отправить?</h3>
+              <label class="radio">
+                <input
+                  class="radio__input"
+                  type="radio"
+                  name="send"
+                  value="Отправить себе"
+                  checked
+                />
+                <span class="radio__value"></span>
+                <span class="radion__text">Отправить себе</span>
+              </label>
+              <label class="radio">
+                <input
+                  class="radio__input"
+                  type="radio"
+                  name="send"
+                  value="Отправить в подарок"
+                />
+                <span class="radio__value"></span>
+                <span class="radion__text">Отправить в подарок</span>
+              </label>
+              <p class="abonement-data__text">
+                Абонемент будет отправлен на email получателя
+              </p>
+            </div>
+            <div class="abonement-data__column">
+              <h3 class="abonement-data__title">Куда отправить?</h3>
+              <label class="label">
+                <span class="label__text">Ваше имя</span>
+                <input
+                  class="input-reset label__input"
+                  type="text"
+                  name="name"
+                  placeholder="Имя"
+                />
+              </label>
+              <label class="label">
+                <span class="label__text">Ваш email</span>
+                <input
+                  class="input-reset label__input"
+                  type="email"
+                  name="email"
+                  placeholder="ivanov@mail.ru"
+                />
+              </label>
+
+              <button
+                type="button"
+                class="btn-reset abonement-data__btn-send"
+                data-btn-send
+              >
+                <span class="abonement-data__btn-text">Подтвердить </span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.029 20L8.68787 18.6589L16.4138 10.9329L0.163087 10.9329L0.163087 9.06706L16.4138 9.06706L8.68787 1.34111L10.029 8.62503e-07L19.3584 9.32945L19.9998 10L19.3584 10.6706L10.029 20Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="confirm" class="abonement">
+          <p class="abonement__text">
+            Проверьте данные и перейдите к оплате заказа
+          </p>
+          <div class="abonement-confirm abonement__confirm">
+            <h3 class="abonement-confirm__title">Данные заказа</h3>
+            <div class="abonement-confirm__column">
+              <div class="abonement-confirm__row">
+                <span class="abonement-confirm__value">
+                  Имя в сертификате:
+                  <span
+                    class="abonement-confirm__value abonement-confirm__value--bold"
+                    data-value="name"
+                  >
+                    Иван
+                  </span>
+                </span>
+                <button
+                  type="button"
+                  data-btn-reset="2"
+                  class="btn-reset abonement-confirm__btn"
+                >
+                  Изменить
+                </button>
+              </div>
+              <div class="abonement-confirm__row">
+                <span class="abonement-confirm__value">
+                  Email для отправки:
+                  <span
+                    class="abonement-confirm__value abonement-confirm__value--bold"
+                    data-value="email"
+                  >
+                    test@mail.ru
+                  </span>
+                </span>
+                <button
+                  type="button"
+                  data-btn-reset="2"
+                  class="btn-reset abonement-confirm__btn"
+                >
+                  Изменить
+                </button>
+              </div>
+              <div class="abonement-confirm__row">
+                <div class="abonement-confirm__content">
+                  <span class="abonement-confirm__value">
+                    Номинал сертификата:
+                    <span
+                      class="abonement-confirm__value abonement-confirm__value--bold"
+                      data-value="type"
+                    >
+                      Основной
+                    </span>
+                  </span>
+                </div>
+
+                <button
+                  type="button"
+                  data-btn-reset="0"
+                  class="btn-reset abonement-confirm__btn"
+                >
+                  Изменить
+                </button>
+              </div>
+              <div class="abonement-confirm__row">
+                <span class="abonement-confirm__value">
+                  Количество:
+                  <span
+                    class="abonement-confirm__value abonement-confirm__value--bold"
+                    data-value="count"
+                  >
+                    1
+                  </span>
+                </span>
+
+                <button
+                  type="button"
+                  data-btn-reset="0"
+                  class="btn-reset abonement-confirm__btn"
+                >
+                  Изменить
+                </button>
+              </div>
+            </div>
+            <div class="abonement-confirm__column">
+              <div class="abonement-confirm__row">
+                <span class="abonement-confirm__value">
+                  Дизайн сертификата
+                </span>
+                <button
+                  type="button"
+                  data-btn-reset="1"
+                  class="btn-reset abonement-confirm__btn"
+                >
+                  Изменить
+                </button>
+              </div>
+              <img
+                loading="lazy"
+                src=""
+                alt="abonement-img"
+                class="abonement-confirm__img"
+              />
+              <div class="abonement-confirm__row abonement-confirm__row--price">
+                <span class="abonement-confirm__value">
+                  Итого:
+                  <span
+                    class="abonement-confirm__value abonement-confirm__value--bold"
+                    data-value="price"
+                  >
+                    8690 руб.
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn-reset abonement__btn-pay">
+            перейти к оплате
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+      </main>
+    </div>
+  </body>
+</html>
