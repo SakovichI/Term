@@ -577,7 +577,7 @@ a {
   z-index: 100;
 }
 .header__wrap {
-  padding: 40px 50px 20px 50px;
+  padding: 20px 50px 20px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -623,7 +623,7 @@ a {
   flex: 1 0 auto;
 }
 .header__location-text {
-  max-width: 320px;
+  max-width: 317px;
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
@@ -2590,7 +2590,7 @@ a {
 }
 .abonement-slider__inner {
   position: relative;
-  padding: 0 60px;
+  padding: 0 0px;
 }
 .abonement-slider__controls button {
   position: absolute;
@@ -2609,12 +2609,18 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 24px;
+  -moz-column-gap: 24px;
+  column-gap: 24px;
+  row-gap: 120px;
 }
 
 .abonement-slide {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
   position: relative;
   -webkit-box-shadow: 4px 4px 16px 0 rgba(203, 210, 216, 0.4);
   box-shadow: 4px 4px 16px 0 rgba(203, 210, 216, 0.4);
@@ -2851,7 +2857,7 @@ a {
 }
 .certeficat-slider__inner {
   position: relative;
-  padding: 0 60px;
+  padding: 0 0px;
 }
 .certeficat-slider__controls button {
   position: absolute;
@@ -2870,11 +2876,17 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 16px;
+  -moz-column-gap: 16px;
+  column-gap: 16px;
+  row-gap: 60px;
 }
 .certeficat-slider__slide {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 380px;
+  flex: 0 0 380px;
 }
 
 .certeficat-slide {
@@ -2913,7 +2925,7 @@ a {
   background: #fff url("../img/abonement/bg9.png") no-repeat center/cover;
 }
 .certeficat-slide__wrap {
-  padding: 60px;
+  padding: 60px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3033,6 +3045,10 @@ a {
   transition: 0.2s ease-in;
 }
 
+.tariffs .tabs-entry {
+  padding: 32px 0;
+}
+
 .discount-slider {
   overflow: hidden;
   padding: 80px 20px 40px 20px;
@@ -3040,7 +3056,7 @@ a {
 .discount-slider__inner {
   width: 100%;
   position: relative;
-  padding: 0 60px;
+  padding: 0 0px;
 }
 .discount-slider__btn {
   position: absolute;
@@ -3070,23 +3086,39 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  row-gap: 60px;
 }
 .discount-slider__slide {
   -webkit-box-flex: 1;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+  -ms-flex: 1 0 420px;
+  flex: 1 0 420px;
+  min-width: none;
+}
+.discount-slider__slide:nth-child(1) .discount-slide__wrap {
+  background: url("../img/abonement/bg1.png") no-repeat top center/cover;
 }
 .discount-slider__slide:nth-child(2) .discount-slide__img {
   top: -30px;
   left: -30px;
 }
+.discount-slider__slide:nth-child(2) .discount-slide__wrap {
+  background: url("../img/abonement/bg2.png") no-repeat top center/cover;
+}
 .discount-slider__slide:nth-child(3) .discount-slide__img {
-  top: -40px;
-  left: -20px;
+  top: -60px;
+  left: -10px;
+}
+.discount-slider__slide:nth-child(3) .discount-slide__wrap {
+  background: url("../img/abonement/bg3.png") no-repeat top center/cover;
 }
 .discount-slider__slide:nth-child(4) .discount-slide__img {
   top: -80px;
   left: 0px;
+}
+.discount-slider__slide:nth-child(4) .discount-slide__wrap {
+  background: url("../img/abonement/bg4.png") no-repeat top center/cover;
 }
 
 .discount-slide {
@@ -3110,6 +3142,7 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  border-radius: 40px;
 }
 .discount-slide__img {
   position: absolute;
@@ -3128,7 +3161,6 @@ a {
 }
 .discount-slide__subtitle {
   display: block;
-  margin-bottom: 20px;
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 24px;
@@ -3137,7 +3169,7 @@ a {
   color: #2d2d2d;
 }
 .discount-slide__text {
-  margin-bottom: 16px;
+  margin-top: 20px;
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
@@ -3453,6 +3485,9 @@ a {
   overflow: hidden;
   -webkit-box-shadow: 4px 0 8px 0 rgba(203, 210, 216, 0.8);
   box-shadow: 4px 0 8px 0 rgba(203, 210, 216, 0.8);
+}
+.contacts__map iframe {
+  border: none;
 }
 
 .contacts-content__item {

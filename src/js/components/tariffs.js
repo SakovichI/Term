@@ -51,3 +51,9 @@ const discountSwiper = new Swiper(".discount-slider", {
     prevEl: ".discount-slider__btn--prev",
   },
 });
+
+window.addEventListener("load", () => {
+  abonementSwiper.disable();
+  certificatSwiper.disable();
+  discountSwiper.disable();
+});

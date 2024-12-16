@@ -1,10 +1,15 @@
+.tariffs {
+  & .tabs-entry {
+    padding: 32px 0;
+  }
+}
 .discount-slider {
   overflow: hidden;
   padding: 80px 20px 40px 20px;
   &__inner {
     width: 100%;
     position: relative;
-    padding: 0 60px;
+    padding: 0 0px;
   }
 
   &__controls {
@@ -36,26 +41,41 @@
 
   &__wrap {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 60px;
   }
 
   &__slide {
-    flex: 1 0 auto;
+    flex: 1 0 420px;
+    min-width: none;
+    &:nth-child(1) .discount-slide__wrap {
+      background: url("../img/abonement/bg1.png") no-repeat top center / cover;
+    }
     &:nth-child(2) {
       & .discount-slide__img {
         top: -30px;
         left: -30px;
       }
+      & .discount-slide__wrap {
+        background: url("../img/abonement/bg2.png") no-repeat top center / cover;
+      }
     }
     &:nth-child(3) {
       & .discount-slide__img {
-        top: -40px;
-        left: -20px;
+        top: -60px;
+        left: -10px;
+      }
+      & .discount-slide__wrap {
+        background: url("../img/abonement/bg3.png") no-repeat top center / cover;
       }
     }
     &:nth-child(4) {
       & .discount-slide__img {
         top: -80px;
         left: -0px;
+      }
+      & .discount-slide__wrap {
+        background: url("../img/abonement/bg4.png") no-repeat top center / cover;
       }
     }
   }
@@ -72,6 +92,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 40px;
   }
 
   &__img {
@@ -93,7 +114,6 @@
 
   &__subtitle {
     display: block;
-    margin-bottom: 20px;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 24px;
@@ -103,7 +123,7 @@
   }
 
   &__text {
-    margin-bottom: 16px;
+    margin-top: 20px;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 20px;

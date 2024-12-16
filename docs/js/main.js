@@ -1066,6 +1066,11 @@ const discountSwiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".disc
     prevEl: ".discount-slider__btn--prev"
   }
 });
+window.addEventListener("load", () => {
+  abonementSwiper.disable();
+  certificatSwiper.disable();
+  discountSwiper.disable();
+});
 
 /***/ }),
 

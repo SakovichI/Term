@@ -17,6 +17,9 @@
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 4px 0 8px 0 rgba(203, 210, 216, 0.8);
+    & iframe {
+      border: none;
+    }
   }
 }
 

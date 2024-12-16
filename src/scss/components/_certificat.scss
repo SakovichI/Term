@@ -3,7 +3,7 @@
   overflow: hidden;
   &__inner {
     position: relative;
-    padding: 0 60px;
+    padding: 0 0px;
   }
 
   &__controls {
@@ -23,10 +23,13 @@
 
   &__wrap {
     display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 60px;
   }
 
   &__slide {
-    flex: 1 0 auto;
+    flex: 0 0 380px;
   }
 }
 .certeficat-slide {
@@ -63,7 +66,7 @@
     background: #fff url("../img/abonement/bg9.png") no-repeat center / cover;
   }
   &__wrap {
-    padding: 60px;
+    padding: 60px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
