@@ -856,6 +856,36 @@
               </div>
             </div>
           </div>
+          <div class="certificate__content">
+            <h3 class="certificate__content-title">
+              Сертификат дает возможность приобретать и оплачивать следующие
+              услуги:
+            </h3>
+            <ul>
+              <li>Входной билет в комплекс по часовым тарифам</li>
+              <li>
+                Входной билет в комплекс по тарифам на безлимитное посещение
+              </li>
+              <li>Превышение времени нахождения в комплексе</li>
+            </ul>
+            <h3 class="certificate__content-title">
+              Условия действия сертификата:
+            </h3>
+            <ul>
+              <li>Срок действия сертификата — бессрочный</li>
+              <li>Сертификат неименной и действует на предъявителя.</li>
+              <li>
+                При стоимости оказанных услуг свыше номинала сертификата гость
+                производит доплату.
+              </li>
+              <li>Использовать можно в любые дни.</li>
+              <li>
+                Обслуживание в порядке живой очереди, наличие сертификата не
+                дает права приоритетного входа при достижении максимального
+                допустимого количества посетителей.
+              </li>
+            </ul>
+          </div>
         </div>
         <div id="design" class="abonement">
           <p class="abonement__text">Выберите дизайн будущего сертификата</p>
@@ -1195,119 +1225,133 @@
           </p>
           <div class="abonement-confirm abonement__confirm">
             <h3 class="abonement-confirm__title">Данные заказа</h3>
-            <div class="abonement-confirm__column">
-              <div class="abonement-confirm__row">
-                <span class="abonement-confirm__value">
-                  Имя в сертификате:
-                  <span
-                    class="abonement-confirm__value abonement-confirm__value--bold"
-                    data-value="name"
-                  >
-                    Иван
-                  </span>
-                </span>
-                <button
-                  type="button"
-                  data-btn-reset="2"
-                  class="btn-reset abonement-confirm__btn"
-                >
-                  Изменить
-                </button>
-              </div>
-              <div class="abonement-confirm__row">
-                <span class="abonement-confirm__value">
-                  Email для отправки:
-                  <span
-                    class="abonement-confirm__value abonement-confirm__value--bold"
-                    data-value="email"
-                  >
-                    test@mail.ru
-                  </span>
-                </span>
-                <button
-                  type="button"
-                  data-btn-reset="2"
-                  class="btn-reset abonement-confirm__btn"
-                >
-                  Изменить
-                </button>
-              </div>
-              <div class="abonement-confirm__row">
-                <div class="abonement-confirm__content">
+            <div class="abonement-confirm__column-data">
+              <div class="abonement-confirm__column">
+                <div class="abonement-confirm__row">
                   <span class="abonement-confirm__value">
-                    Номинал сертификата:
+                    Имя в сертификате:
                     <span
                       class="abonement-confirm__value abonement-confirm__value--bold"
-                      data-value="type"
+                      data-value="name"
                     >
-                      Основной
+                      Иван
+                    </span>
+                  </span>
+                  <button
+                    type="button"
+                    data-btn-reset="2"
+                    class="btn-reset abonement-confirm__btn"
+                  >
+                    Изменить
+                  </button>
+                </div>
+                <div class="abonement-confirm__row">
+                  <span class="abonement-confirm__value">
+                    Email для отправки:
+                    <span
+                      class="abonement-confirm__value abonement-confirm__value--bold"
+                      data-value="email"
+                    >
+                      test@mail.ru
+                    </span>
+                  </span>
+                  <button
+                    type="button"
+                    data-btn-reset="2"
+                    class="btn-reset abonement-confirm__btn"
+                  >
+                    Изменить
+                  </button>
+                </div>
+                <div class="abonement-confirm__row">
+                  <div class="abonement-confirm__content">
+                    <span class="abonement-confirm__value">
+                      Номинал сертификата:
+                      <span
+                        class="abonement-confirm__value abonement-confirm__value--bold"
+                        data-value="type"
+                      >
+                        Основной
+                      </span>
+                    </span>
+                  </div>
+
+                  <button
+                    type="button"
+                    data-btn-reset="0"
+                    class="btn-reset abonement-confirm__btn"
+                  >
+                    Изменить
+                  </button>
+                </div>
+                <div class="abonement-confirm__row">
+                  <span class="abonement-confirm__value">
+                    Количество:
+                    <span
+                      class="abonement-confirm__value abonement-confirm__value--bold"
+                      data-value="count"
+                    >
+                      1
+                    </span>
+                  </span>
+
+                  <button
+                    type="button"
+                    data-btn-reset="0"
+                    class="btn-reset abonement-confirm__btn"
+                  >
+                    Изменить
+                  </button>
+                </div>
+                <div class="abonement-confirm__row">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field" />
+                    <span class="custom-checkbox__content">
+                      Хочу получать новостную рассылку о скидках и акциях Термы
+                      Видное
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="abonement-confirm__column">
+                <div class="abonement-confirm__row">
+                  <span class="abonement-confirm__value">
+                    Дизайн сертификата
+                  </span>
+                  <button
+                    type="button"
+                    data-btn-reset="1"
+                    class="btn-reset abonement-confirm__btn"
+                  >
+                    Изменить
+                  </button>
+                </div>
+                <img
+                  loading="lazy"
+                  src=""
+                  alt="abonement-img"
+                  class="abonement-confirm__img"
+                />
+                <div
+                  class="abonement-confirm__row abonement-confirm__row--price"
+                >
+                  <span class="abonement-confirm__value">
+                    Итого:
+                    <span
+                      class="abonement-confirm__value abonement-confirm__value--bold"
+                      data-value="price"
+                    >
+                      8690 руб.
                     </span>
                   </span>
                 </div>
-
-                <button
-                  type="button"
-                  data-btn-reset="0"
-                  class="btn-reset abonement-confirm__btn"
-                >
-                  Изменить
-                </button>
-              </div>
-              <div class="abonement-confirm__row">
-                <span class="abonement-confirm__value">
-                  Количество:
-                  <span
-                    class="abonement-confirm__value abonement-confirm__value--bold"
-                    data-value="count"
-                  >
-                    1
-                  </span>
-                </span>
-
-                <button
-                  type="button"
-                  data-btn-reset="0"
-                  class="btn-reset abonement-confirm__btn"
-                >
-                  Изменить
-                </button>
               </div>
             </div>
-            <div class="abonement-confirm__column">
-              <div class="abonement-confirm__row">
-                <span class="abonement-confirm__value">
-                  Дизайн сертификата
-                </span>
-                <button
-                  type="button"
-                  data-btn-reset="1"
-                  class="btn-reset abonement-confirm__btn"
-                >
-                  Изменить
-                </button>
-              </div>
-              <img
-                loading="lazy"
-                src=""
-                alt="abonement-img"
-                class="abonement-confirm__img"
-              />
-              <div class="abonement-confirm__row abonement-confirm__row--price">
-                <span class="abonement-confirm__value">
-                  Итого:
-                  <span
-                    class="abonement-confirm__value abonement-confirm__value--bold"
-                    data-value="price"
-                  >
-                    8690 руб.
-                  </span>
-                </span>
-              </div>
-            </div>
+
+            <button type="button" class="btn-reset abonement__btn-pay">
+              перейти к оплате
+            </button>
           </div>
-          <button type="button" class="btn-reset abonement__btn-pay">
-            перейти к оплате
-          </button>
         </div>
       </div>
     </div>

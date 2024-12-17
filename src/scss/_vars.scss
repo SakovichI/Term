@@ -15,3 +15,9 @@
   --disable: #9d9d9d;
   --grey-link: #727272;
 }
+
+@media all and (max-width: 1100px) {
+  :root {
+    --container-offset: 30px;
+  }
+}

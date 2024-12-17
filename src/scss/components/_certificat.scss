@@ -192,20 +192,42 @@
     }
   }
 }
-.counter {
-  &__minus {
+.certificate {
+  &__content {
+    margin-bottom: 40px;
+    padding: 24px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 8px 0 rgba(221, 230, 227, 0.8);
+    background: #fff;
   }
 
-  &__count {
+  &__content-title {
+    margin-bottom: 10px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 110%;
+    letter-spacing: 0.04em;
+    color: var(--dark-grey-text);
   }
 
-  &__plus {
-  }
-}
-.abonement-slide {
-  &__link {
+  & ul {
+    margin-bottom: 20px;
+    margin-left: 24px;
   }
 
-  &__link-text {
+  & li {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: var(--dark-grey-text);
+    &::marker {
+      font-size: 24px;
+      color: #73b4ff;
+    }
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 }
