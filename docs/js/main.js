@@ -422,7 +422,7 @@ blogsSliders.forEach((el, index) => {
   const blogSwiper = new swiper__WEBPACK_IMPORTED_MODULE_2__["default"](el, {
     wrapperClass: "blog-slider__wrap",
     slideClass: "blog-slider__slide",
-    slidesPerView: "auto",
+    slidesPerView: "1",
     loop: true,
     spaceBetween: 24,
     speed: 800,
@@ -431,15 +431,24 @@ blogsSliders.forEach((el, index) => {
       nextEl: ".blog-slider__btn--next",
       prevEl: ".blog-slider__btn--prev"
     },
+    breakpoints: {
+      900: {
+        slidesPerView: "auto"
+      }
+    },
     on: {
       init: function () {
-        blogSwiper.slides[0].classList.add("active");
-        blogSwiper.slides.forEach((slide, i) => [slide.addEventListener("click", () => {
-          blogSwiper.slides.forEach(slider => {
-            slider.classList.remove("active");
-          });
-          slide.classList.add("active");
-        })]);
+        if (window.innerWidth > 900) {
+          blogSwiper.slides[0].classList.add("active");
+          blogSwiper.slides.forEach((slide, i) => [slide.addEventListener("click", () => {
+            blogSwiper.slides.forEach(slider => {
+              slider.classList.remove("active");
+            });
+            slide.classList.add("active");
+          })]);
+        } else {
+          blogSwiper.slides.forEach(slide => [slide.classList.add("active")]);
+        }
       }
     }
   });
@@ -535,7 +544,7 @@ if (abonementSlides.length) {
     selectedDesign(orderData);
   });
   if (abonementTypeBtns) {
-    setAbonementType(abonementTypeBtns);
+    setAbonementType(abonementTypeBtns, tabs);
   }
   if (designBtns) {
     designBtns.forEach(designBtn => {
@@ -635,7 +644,7 @@ if (certificateSlides.length) {
     });
   }
 }
-function setAbonementType(elements) {
+function setAbonementType(elements, tabs) {
   elements.forEach(typeBtn => {
     typeBtn.addEventListener("click", e => {
       e.preventDefault();
@@ -838,6 +847,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination]);
+const counter = document.querySelector(".map-slider__slider-text");
 const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".map-slider", {
   wrapperClass: "map-slider__wrap",
   slideClass: "map-slider__slide",
@@ -846,6 +856,11 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".map-slider",
   navigation: {
     nextEl: ".map-slider__btn--next",
     prevEl: ".map-slider__btn--prev"
+  },
+  on: {
+    slideChange: function () {
+      counter.innerHTML = `${this.activeIndex + 1} этаж`;
+    }
   }
 });
 
@@ -1036,7 +1051,7 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".tariffs-slid
 const abonementSwiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".abonement-slider", {
   wrapperClass: "abonement-slider__wrap",
   slideClass: "abonement-slider__slide",
-  slidesPerView: 3,
+  slidesPerView: "auto",
   spaceBetween: 24,
   speed: 800,
   navigation: {
@@ -1047,7 +1062,7 @@ const abonementSwiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".abo
 const certificatSwiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".certeficat-slider", {
   wrapperClass: "certeficat-slider__wrap",
   slideClass: "certeficat-slider__slide",
-  slidesPerView: 3,
+  slidesPerView: "auto",
   spaceBetween: 24,
   speed: 800,
   navigation: {
@@ -1058,7 +1073,7 @@ const certificatSwiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".ce
 const discountSwiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".discount-slider", {
   wrapperClass: "discount-slider__wrap",
   slideClass: "discount-slider__slide",
-  slidesPerView: 2,
+  slidesPerView: "auto",
   spaceBetween: 24,
   speed: 800,
   navigation: {
@@ -1067,9 +1082,26 @@ const discountSwiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".disc
   }
 });
 window.addEventListener("load", () => {
-  abonementSwiper.disable();
-  certificatSwiper.disable();
-  discountSwiper.disable();
+  if (window.innerWidth > 1000) {
+    abonementSwiper.disable();
+    certificatSwiper.disable();
+    discountSwiper.disable();
+  } else {
+    abonementSwiper.enable();
+    certificatSwiper.enable();
+    discountSwiper.enable();
+  }
+});
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 1000) {
+    abonementSwiper.disable();
+    certificatSwiper.disable();
+    discountSwiper.disable();
+  } else {
+    abonementSwiper.enable();
+    certificatSwiper.enable();
+    discountSwiper.enable();
+  }
 });
 
 /***/ }),

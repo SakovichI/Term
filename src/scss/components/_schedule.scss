@@ -7,6 +7,7 @@
     margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
+    row-gap: 24px;
     justify-content: space-between;
   }
 
@@ -14,6 +15,10 @@
     display: flex;
     align-items: center;
     gap: 16px;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
   &__header-title {
     margin-bottom: 40px;
@@ -62,6 +67,7 @@
     border-radius: 50px;
     background: #fff;
     transition: 0.2s ease-in;
+    white-space: nowrap;
     &.active {
       color: #fff;
       background: #4897e0;
@@ -92,6 +98,7 @@
       width: 20px;
       height: 20px;
       border-radius: 50%;
+      flex: 0 0 auto;
     }
     &[data-tag="Все"] {
       &::before {
@@ -131,6 +138,7 @@
     flex: 0 0 auto;
   }
 }
+
 .schedule-table {
   &__title {
     opacity: 0;
@@ -140,6 +148,16 @@
   &__header {
     width: 100%;
     display: flex;
+  }
+
+  &__label {
+    display: none;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 145%;
+    text-align: center;
+    color: var(--grey-link);
   }
 
   &__header-title {
@@ -171,10 +189,18 @@
     }
   }
 
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
   &__row {
     width: 100%;
     display: flex;
-    &[data-tag-row="Парения"] .schedule-table__value {
+    &[data-tag-row="Парения"]
+      .schedule-table__value
+      > .schedule-table__content {
       &::before {
         content: "";
         display: block;
@@ -182,9 +208,10 @@
         height: 16px;
         border-radius: 50%;
         background-color: #0c3498;
+        flex: 0 0 auto;
       }
     }
-    &[data-tag-row="Фитнес"] .schedule-table__value {
+    &[data-tag-row="Фитнес"] .schedule-table__value > .schedule-table__content {
       &::before {
         content: "";
         display: block;
@@ -192,9 +219,12 @@
         height: 16px;
         border-radius: 50%;
         background-color: #0c9873;
+        flex: 0 0 auto;
       }
     }
-    &[data-tag-row="Мастер-классы"] .schedule-table__value {
+    &[data-tag-row="Мастер-классы"]
+      .schedule-table__value
+      > .schedule-table__content {
       &::before {
         content: "";
         display: block;
@@ -202,9 +232,12 @@
         height: 16px;
         border-radius: 50%;
         background-color: #ffc711;
+        flex: 0 0 auto;
       }
     }
-    &[data-tag-row="Анимация"] .schedule-table__value {
+    &[data-tag-row="Анимация"]
+      .schedule-table__value
+      > .schedule-table__content {
       &::before {
         content: "";
         display: block;
@@ -212,6 +245,7 @@
         height: 16px;
         border-radius: 50%;
         background-color: #e400ab;
+        flex: 0 0 auto;
       }
     }
     & span {
@@ -219,6 +253,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: row;
       padding: 12px 36px;
       backdrop-filter: blur(20px);
       background: rgba(255, 255, 255, 0.4);
@@ -242,6 +277,16 @@
         flex: 1 1 60%;
       }
     }
+
+    & span.schedule-table__label {
+      display: none;
+      font-family: var(--font-family);
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 145%;
+      text-align: center;
+      color: var(--grey-link);
+    }
   }
 
   &__time {
@@ -261,5 +306,129 @@
 
   &__price {
     color: #008d61;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .schedule {
+    margin-bottom: 60px;
+    &__inner {
+    }
+
+    &__header {
+      margin-bottom: 32px;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 32px;
+      justify-content: space-between;
+    }
+
+    &__header-tags {
+      gap: 8px;
+    }
+
+    &__header-title {
+      margin-bottom: 0;
+      flex: 1 1 50%;
+    }
+  }
+
+  .schedule-tags {
+    &__btn {
+      padding: 10px 24px;
+      font-size: 18px;
+    }
+  }
+
+  .schedule-table {
+    & span {
+      padding: 12px;
+      flex: 1 1 30%;
+      font-size: 18px;
+    }
+  }
+}
+
+@media all and (max-width: 850px) {
+  .schedule-table {
+    &__title {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    &__header {
+      width: 100%;
+      display: flex;
+      display: none;
+    }
+
+    &__row {
+      margin-bottom: 16px;
+      padding: 16px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      border-radius: 16px;
+      box-shadow: 2px 3px 8px 0 rgba(221, 230, 227, 0.8);
+      background: rgba(255, 255, 255, 0.9);
+
+      & span {
+        flex: 1 1 100%;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        padding: 0;
+        font-size: 16px;
+        background: none;
+        backdrop-filter: none;
+        text-align: center;
+        border-top: none;
+        border-bottom: none;
+        border-right: none;
+        &:first-child {
+          order: 1;
+          flex: 0 0 40%;
+          border-left: none;
+        }
+        &:last-child {
+          order: 2;
+          flex: 0 0 40%;
+        }
+        &:nth-child(3) {
+          order: 3;
+          flex: 1 1 100%;
+          display: flex;
+        }
+        &:nth-child(2) {
+          order: 4;
+          flex: 1 1 100%;
+          display: flex;
+        }
+      }
+
+      & span.schedule-table__label {
+        order: 0;
+        flex: 1 1 100%;
+        display: block;
+        text-align: start;
+      }
+    }
+
+    &__value {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--dark-grey-text);
+    }
+
+    &__place {
+      color: var(--dark-grey-text);
+    }
+
+    &__price {
+      color: #008d61;
+    }
   }
 }

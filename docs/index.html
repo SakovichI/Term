@@ -68,7 +68,7 @@
   <body class="page__body">
     <div class="burger-menu" data-menu>
   <div class="burger-menu__head">
-    <a href="#" class="burger-menu__logo">
+    <a href="./" class="burger-menu__logo">
       <img
         loading="lazy"
         src="img/logo.png"
@@ -221,7 +221,7 @@
       <header class="header">
   <div class="header__wrap">
     <div class="header__left">
-      <a href="#" class="header__logo">
+      <a href="./" class="header__logo">
         <img
           loading="lazy"
           src="img/logo.png"
@@ -379,13 +379,16 @@
           <a href="img/1etaj.png" data-fancybox="gallery" data-caption="1 этаж">
             <img loading="lazy" src="img/1etaj.png" />
           </a>
-          <span class="map-slider__slider-text">1 этаж</span>
         </div>
         <div class="map-slider__slide">
           <a href="img/2etaj.png" data-fancybox="gallery" data-caption="2 этаж">
             <img loading="lazy" src="img/2etaj.png" />
           </a>
-          <span class="map-slider__slider-text">2 этаж</span>
+        </div>
+        <div class="map-slider__slide">
+          <a href="img/3etaj.png" data-fancybox="gallery" data-caption="3 этаж">
+            <img loading="lazy" src="img/3etaj.png" />
+          </a>
         </div>
       </div>
       <div class="map-slider__controls">
@@ -425,6 +428,7 @@
             </defs>
           </svg>
         </button>
+        <span class="map-slider__slider-text">1 этаж</span>
         <button
           type="button"
           class="btn-reset map-slider__btn map-slider__btn--next"
@@ -500,7 +504,7 @@
 
             <div class="tabs-entry__panels">
               <div id="standard" class="active">
-                <div class="tariffs__slider tariffs-slider">
+                <div class="tariffs__slider-inner">
                   <div class="tariffs-slider__controls">
                     <button
                       class="btn-reset tariffs-slider__btn tariffs-slider__btn--prev"
@@ -560,176 +564,190 @@
                       </svg>
                     </button>
                   </div>
-                  <div class="tariffs-slider__wrap">
-                    <div class="tariffs-slider__slide tariffs-slide">
-                      <img
-                        loading="lazy"
-                        src="img/tariffs-slider/slide1.png"
-                        alt="img"
-                        width="110"
-                        height="110"
-                        class="tariffs-slide__img"
-                      />
-                      <div class="tariffs-slide__wrap">
-                        <h3 class="tariffs-slide__title">Взрослый билет</h3>
-                        <span class="tariffs-slide__subtitle">от 13 лет</span>
-                        <div class="tariffs-slide__item">
-                          <h4 class="tariffs-slide__item-title">
-                            Будни (Пн-Пт до 18:00)
-                          </h4>
-                          <div class="tariffs-slide__item-column">
-                            <span class="tariffs-slide__item-text">410 </span>
-                            <span
-                              class="tariffs-slide__item-text tariffs-slide__item-text--bold"
-                              >1 час</span
-                            >
+                  <div class="tariffs__slider tariffs-slider">
+                    <div class="tariffs-slider__wrap">
+                      <div class="tariffs-slider__slide tariffs-slide">
+                        <img
+                          loading="lazy"
+                          src="img/tariffs-slider/slide1.png"
+                          alt="img"
+                          width="110"
+                          height="110"
+                          class="tariffs-slide__img"
+                        />
+                        <div class="tariffs-slide__wrap">
+                          <h3 class="tariffs-slide__title">Взрослый билет</h3>
+                          <span class="tariffs-slide__subtitle">от 13 лет</span>
+                          <div class="tariffs-slide__item">
+                            <h4 class="tariffs-slide__item-title">
+                              Будни (Пн-Пт до 18:00)
+                            </h4>
+                            <div class="tariffs-slide__item-column">
+                              <span class="tariffs-slide__item-text">410 </span>
+                              <span
+                                class="tariffs-slide__item-text tariffs-slide__item-text--bold"
+                                >1 час</span
+                              >
+                            </div>
+                            <div class="tariffs-slide__item-line"></div>
+                            <div class="tariffs-slide__item-column">
+                              <span class="tariffs-slide__item-text"
+                                >2100
+                              </span>
+                              <span
+                                class="tariffs-slide__item-text tariffs-slide__item-text--bold"
+                                >Безлимит</span
+                              >
+                            </div>
                           </div>
-                          <div class="tariffs-slide__item-line"></div>
-                          <div class="tariffs-slide__item-column">
-                            <span class="tariffs-slide__item-text">2100 </span>
-                            <span
-                              class="tariffs-slide__item-text tariffs-slide__item-text--bold"
-                              >Безлимит</span
-                            >
+                          <div class="tariffs-slide__item">
+                            <h4 class="tariffs-slide__item-title">
+                              Выходные (Пт с 18:00 — Вс)
+                            </h4>
+                            <div class="tariffs-slide__item-column">
+                              <span class="tariffs-slide__item-text">560 </span>
+                              <span
+                                class="tariffs-slide__item-text tariffs-slide__item-text--bold"
+                                >1 час</span
+                              >
+                            </div>
+                            <div class="tariffs-slide__item-line"></div>
+                            <div class="tariffs-slide__item-column">
+                              <span class="tariffs-slide__item-text"
+                                >2500
+                              </span>
+                              <span
+                                class="tariffs-slide__item-text tariffs-slide__item-text--bold"
+                                >Безлимит</span
+                              >
+                            </div>
                           </div>
+                          <span class="tariffs-slide__footer">
+                            Доступен к покупке только на кассе комплекса
+                          </span>
                         </div>
-                        <div class="tariffs-slide__item">
-                          <h4 class="tariffs-slide__item-title">
-                            Выходные (Пт с 18:00 — Вс)
-                          </h4>
-                          <div class="tariffs-slide__item-column">
-                            <span class="tariffs-slide__item-text">560 </span>
-                            <span
-                              class="tariffs-slide__item-text tariffs-slide__item-text--bold"
-                              >1 час</span
-                            >
-                          </div>
-                          <div class="tariffs-slide__item-line"></div>
-                          <div class="tariffs-slide__item-column">
-                            <span class="tariffs-slide__item-text">2500 </span>
-                            <span
-                              class="tariffs-slide__item-text tariffs-slide__item-text--bold"
-                              >Безлимит</span
-                            >
-                          </div>
-                        </div>
-                        <span class="tariffs-slide__footer">
-                          Доступен к покупке только на кассе комплекса
-                        </span>
                       </div>
-                    </div>
-                    <div class="tariffs-slider__slide tariffs-slide">
-                      <img
-                        loading="lazy"
-                        src="img/tariffs-slider/slide2.png"
-                        alt="img"
-                        width="110"
-                        height="110"
-                        class="tariffs-slide__img"
-                      />
-                      <div class="tariffs-slide__wrap">
-                        <h3 class="tariffs-slide__title">Школьники</h3>
-                        <span class="tariffs-slide__subtitle">7-13 лет</span>
-                        <div class="tariffs-slide__item">
-                          <h4 class="tariffs-slide__item-title">
-                            Будни (Пн-Пт до 18:00)
-                          </h4>
-                          <div class="tariffs-slide__item-column">
-                            <span class="tariffs-slide__item-text">410 </span>
-                            <span
-                              class="tariffs-slide__item-text tariffs-slide__item-text--bold"
-                              >1 час</span
-                            >
+                      <div class="tariffs-slider__slide tariffs-slide">
+                        <img
+                          loading="lazy"
+                          src="img/tariffs-slider/slide2.png"
+                          alt="img"
+                          width="110"
+                          height="110"
+                          class="tariffs-slide__img"
+                        />
+                        <div class="tariffs-slide__wrap">
+                          <h3 class="tariffs-slide__title">Школьники</h3>
+                          <span class="tariffs-slide__subtitle">7-13 лет</span>
+                          <div class="tariffs-slide__item">
+                            <h4 class="tariffs-slide__item-title">
+                              Будни (Пн-Пт до 18:00)
+                            </h4>
+                            <div class="tariffs-slide__item-column">
+                              <span class="tariffs-slide__item-text">410 </span>
+                              <span
+                                class="tariffs-slide__item-text tariffs-slide__item-text--bold"
+                                >1 час</span
+                              >
+                            </div>
+                            <div class="tariffs-slide__item-line"></div>
+                            <div class="tariffs-slide__item-column">
+                              <span class="tariffs-slide__item-text"
+                                >2100
+                              </span>
+                              <span
+                                class="tariffs-slide__item-text tariffs-slide__item-text--bold"
+                                >Безлимит</span
+                              >
+                            </div>
                           </div>
-                          <div class="tariffs-slide__item-line"></div>
-                          <div class="tariffs-slide__item-column">
-                            <span class="tariffs-slide__item-text">2100 </span>
-                            <span
-                              class="tariffs-slide__item-text tariffs-slide__item-text--bold"
-                              >Безлимит</span
-                            >
+                          <div class="tariffs-slide__item">
+                            <h4 class="tariffs-slide__item-title">
+                              Выходные (Пт с 18:00 — Вс)
+                            </h4>
+                            <div class="tariffs-slide__item-column">
+                              <span class="tariffs-slide__item-text">560 </span>
+                              <span
+                                class="tariffs-slide__item-text tariffs-slide__item-text--bold"
+                                >1 час</span
+                              >
+                            </div>
+                            <div class="tariffs-slide__item-line"></div>
+                            <div class="tariffs-slide__item-column">
+                              <span class="tariffs-slide__item-text"
+                                >2500
+                              </span>
+                              <span
+                                class="tariffs-slide__item-text tariffs-slide__item-text--bold"
+                                >Безлимит</span
+                              >
+                            </div>
                           </div>
+                          <span class="tariffs-slide__footer">
+                            Доступен к покупке только на кассе комплекса
+                          </span>
                         </div>
-                        <div class="tariffs-slide__item">
-                          <h4 class="tariffs-slide__item-title">
-                            Выходные (Пт с 18:00 — Вс)
-                          </h4>
-                          <div class="tariffs-slide__item-column">
-                            <span class="tariffs-slide__item-text">560 </span>
-                            <span
-                              class="tariffs-slide__item-text tariffs-slide__item-text--bold"
-                              >1 час</span
-                            >
-                          </div>
-                          <div class="tariffs-slide__item-line"></div>
-                          <div class="tariffs-slide__item-column">
-                            <span class="tariffs-slide__item-text">2500 </span>
-                            <span
-                              class="tariffs-slide__item-text tariffs-slide__item-text--bold"
-                              >Безлимит</span
-                            >
-                          </div>
-                        </div>
-                        <span class="tariffs-slide__footer">
-                          Доступен к покупке только на кассе комплекса
-                        </span>
                       </div>
-                    </div>
-                    <div class="tariffs-slider__slide tariffs-slide">
-                      <img
-                        loading="lazy"
-                        src="img/tariffs-slider/slide3.png"
-                        alt="img"
-                        width="110"
-                        height="110"
-                        class="tariffs-slide__img"
-                      />
-                      <div class="tariffs-slide__wrap">
-                        <h3 class="tariffs-slide__title">Дети</h3>
-                        <span class="tariffs-slide__subtitle">до 7 лет</span>
-                        <div class="tariffs-slide__item">
-                          <h4 class="tariffs-slide__item-title">
-                            Будни (Пн-Пт до 18:00)
-                          </h4>
-                          <div class="tariffs-slide__item-column">
-                            <span class="tariffs-slide__item-text">410 </span>
-                            <span
-                              class="tariffs-slide__item-text tariffs-slide__item-text--bold"
-                              >1 час</span
-                            >
+                      <div class="tariffs-slider__slide tariffs-slide">
+                        <img
+                          loading="lazy"
+                          src="img/tariffs-slider/slide3.png"
+                          alt="img"
+                          width="110"
+                          height="110"
+                          class="tariffs-slide__img"
+                        />
+                        <div class="tariffs-slide__wrap">
+                          <h3 class="tariffs-slide__title">Дети</h3>
+                          <span class="tariffs-slide__subtitle">до 7 лет</span>
+                          <div class="tariffs-slide__item">
+                            <h4 class="tariffs-slide__item-title">
+                              Будни (Пн-Пт до 18:00)
+                            </h4>
+                            <div class="tariffs-slide__item-column">
+                              <span class="tariffs-slide__item-text">410 </span>
+                              <span
+                                class="tariffs-slide__item-text tariffs-slide__item-text--bold"
+                                >1 час</span
+                              >
+                            </div>
+                            <div class="tariffs-slide__item-line"></div>
+                            <div class="tariffs-slide__item-column">
+                              <span class="tariffs-slide__item-text"
+                                >2100
+                              </span>
+                              <span
+                                class="tariffs-slide__item-text tariffs-slide__item-text--bold"
+                                >Безлимит</span
+                              >
+                            </div>
                           </div>
-                          <div class="tariffs-slide__item-line"></div>
-                          <div class="tariffs-slide__item-column">
-                            <span class="tariffs-slide__item-text">2100 </span>
-                            <span
-                              class="tariffs-slide__item-text tariffs-slide__item-text--bold"
-                              >Безлимит</span
-                            >
+                          <div class="tariffs-slide__item">
+                            <h4 class="tariffs-slide__item-title">
+                              Выходные (Пт с 18:00 — Вс)
+                            </h4>
+                            <div class="tariffs-slide__item-column">
+                              <span class="tariffs-slide__item-text">560 </span>
+                              <span
+                                class="tariffs-slide__item-text tariffs-slide__item-text--bold"
+                                >1 час</span
+                              >
+                            </div>
+                            <div class="tariffs-slide__item-line"></div>
+                            <div class="tariffs-slide__item-column">
+                              <span class="tariffs-slide__item-text"
+                                >2500
+                              </span>
+                              <span
+                                class="tariffs-slide__item-text tariffs-slide__item-text--bold"
+                                >Безлимит</span
+                              >
+                            </div>
                           </div>
+                          <span class="tariffs-slide__footer">
+                            Доступен к покупке только на кассе комплекса
+                          </span>
                         </div>
-                        <div class="tariffs-slide__item">
-                          <h4 class="tariffs-slide__item-title">
-                            Выходные (Пт с 18:00 — Вс)
-                          </h4>
-                          <div class="tariffs-slide__item-column">
-                            <span class="tariffs-slide__item-text">560 </span>
-                            <span
-                              class="tariffs-slide__item-text tariffs-slide__item-text--bold"
-                              >1 час</span
-                            >
-                          </div>
-                          <div class="tariffs-slide__item-line"></div>
-                          <div class="tariffs-slide__item-column">
-                            <span class="tariffs-slide__item-text">2500 </span>
-                            <span
-                              class="tariffs-slide__item-text tariffs-slide__item-text--bold"
-                              >Безлимит</span
-                            >
-                          </div>
-                        </div>
-                        <span class="tariffs-slide__footer">
-                          Доступен к покупке только на кассе комплекса
-                        </span>
                       </div>
                     </div>
                   </div>
@@ -3488,42 +3506,80 @@
             </div>
             <div class="schedule-table__row" data-tag-row="Фитнес">
               <span class="schedule-table__time">09:00</span>
-              <span class="schedule-table__value">Cycle</span>
-              <span class="schedule-table__place">Фитнес</span>
+              <span class="schedule-table__value">
+                <span class="schedule-table__label">Мероприятие</span>
+                <div class="schedule-table__content">Cycle</div>
+              </span>
+
+              <span class="schedule-table__place">
+                <span class="schedule-table__label">Место</span>
+                <div class="schedule-table__content">Фитнес</div>
+              </span>
               <span class="schedule-table__price">Бесплатно</span>
             </div>
             <div class="schedule-table__row" data-tag-row="Парения">
               <span class="schedule-table__time">10:00</span>
-              <span class="schedule-table__value">Парение флагом</span>
-              <span class="schedule-table__place">Сауна Сахара</span>
+              <span class="schedule-table__value">
+                <span class="schedule-table__label">Мероприятие</span>
+                <div class="schedule-table__content">Парение флагом</div>
+              </span>
+              <span class="schedule-table__place">
+                <span class="schedule-table__label">Место</span>
+                <div class="schedule-table__content">Сауна Сахара</div>
+              </span>
               <span class="schedule-table__price">Бесплатно</span>
             </div>
             <div class="schedule-table__row" data-tag-row="Фитнес">
               <span class="schedule-table__time">11:00</span>
-              <span class="schedule-table__value">Pump</span>
-              <span class="schedule-table__place">Фитнес</span>
+              <span class="schedule-table__value">
+                <span class="schedule-table__label">Мероприятие</span>
+
+                <div class="schedule-table__content">Pump</div>
+              </span>
+              <span class="schedule-table__place">
+                <span class="schedule-table__label">Место</span>
+                <div class="schedule-table__content">Фитнес</div>
+              </span>
               <span class="schedule-table__price">Бесплатно</span>
             </div>
             <div class="schedule-table__row" data-tag-row="Парения">
               <span class="schedule-table__time">11:00</span>
-              <span class="schedule-table__value"
-                >Успокаивающее травяное парение</span
-              >
-              <span class="schedule-table__place">Травяная сауна</span>
+              <span class="schedule-table__value">
+                <span class="schedule-table__label">Мероприятие</span>
+                <div class="schedule-table__content">
+                  Успокаивающее травяное парение
+                </div>
+              </span>
+              <span class="schedule-table__place">
+                <span class="schedule-table__label">Место</span>
+                <div class="schedule-table__content">Травяная сауна</div>
+              </span>
               <span class="schedule-table__price">500 руб</span>
             </div>
             <div class="schedule-table__row" data-tag-row="Анимация">
               <span class="schedule-table__time">12:00</span>
-              <span class="schedule-table__value">Пенная вечеринка</span>
-              <span class="schedule-table__place">Детский бассейн</span>
+              <span class="schedule-table__value">
+                <span class="schedule-table__label">Мероприятие</span>
+                <div class="schedule-table__content">Пенная вечеринка</div>
+              </span>
+              <span class="schedule-table__place">
+                <span class="schedule-table__label">Место</span>
+                <div class="schedule-table__content">Детский бассейн</div>
+              </span>
               <span class="schedule-table__price">Бесплатно</span>
             </div>
             <div class="schedule-table__row" data-tag-row="Мастер-классы">
               <span class="schedule-table__time">13:00</span>
-              <span class="schedule-table__value"
-                >Скраб для мягкой кожи своими руками</span
-              >
-              <span class="schedule-table__place">Турецкий хаммам</span>
+              <span class="schedule-table__value">
+                <span class="schedule-table__label">Мероприятие</span>
+                <div class="schedule-table__content">
+                  Скраб для мягкой кожи своими руками
+                </div>
+              </span>
+              <span class="schedule-table__place">
+                <span class="schedule-table__label">Место</span>
+                <div class="schedule-table__content">Турецкий хаммам</div>
+              </span>
               <span class="schedule-table__price">500 руб</span>
             </div>
           </div>

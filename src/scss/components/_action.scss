@@ -13,3 +13,32 @@
     color: #151515;
   }
 }
+
+@media all and (max-width: 1000px) {
+  .action {
+    margin-bottom: 60px;
+    &__wrap {
+      background: url("../img/action-bg.png") no-repeat center right / cover;
+    }
+
+    &__text {
+      max-width: 600px;
+      font-size: 24px;
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  .action {
+    margin-bottom: 60px;
+    &__wrap {
+      background: url("../img/action-bg-mob.png") no-repeat center / cover;
+    }
+
+    &__text {
+      padding: 17px 24px;
+      max-width: 100%;
+      font-size: 18px;
+    }
+  }
+}

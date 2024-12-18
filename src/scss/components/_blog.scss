@@ -195,3 +195,222 @@
     color: #fff;
   }
 }
+
+@media all and (max-width: 1250px) {
+  .blog-slide {
+    flex: 1 1 10%;
+    transition: 0.2s ease-in;
+    overflow: hidden;
+    max-height: 600px;
+    &.active {
+      flex: 1 1 70%;
+      transition: 0.4s ease-in;
+    }
+    &.active .blog-slide__content {
+      width: 100%;
+      overflow: hidden;
+      opacity: 1;
+      visibility: visible;
+      transition: 0s ease-in 0.4s;
+    }
+    &.active .blog-slide__title {
+      &--disabled {
+        display: none;
+      }
+    }
+    &__wrap {
+      height: 100%;
+      position: relative;
+      padding: 40px 40px 40px 30px;
+    }
+
+    &__title {
+      position: relative;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 161%;
+      text-transform: uppercase;
+      color: #fff;
+
+      &--disabled {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-90deg);
+        white-space: nowrap;
+        display: block;
+        text-orientation: upright;
+        cursor: pointer;
+      }
+
+      &--large {
+        font-size: 38px;
+      }
+    }
+
+    &__link {
+      padding: 12px 12px;
+      font-size: 14px;
+    }
+
+    &__text {
+      margin-bottom: 16px;
+      font-size: 24px;
+    }
+
+    &__footer-items {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    &__footer-item {
+      flex: 1 1 50%;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    &__footer-item-tag {
+      font-size: 20px;
+    }
+
+    &__footer-item-text {
+      font-size: 18px;
+    }
+  }
+}
+
+@media all and (max-width: 900px) {
+  .blog {
+    &__inner {
+      position: relative;
+      padding: 0 30px;
+    }
+    &__slider {
+      overflow: hidden;
+      padding-bottom: 40px;
+      margin: 24px 0 40px 0;
+    }
+  }
+
+  .blog-slider {
+    &__btn {
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      &--prev {
+        left: 0;
+      }
+      &--next {
+        right: 0;
+      }
+    }
+  }
+  .blog-slide {
+    flex: 0 0 100%;
+    transition: 0.2s ease-in;
+    overflow: visible;
+    border-radius: 24px;
+    height: 400px;
+    max-height: 600px;
+    &.active {
+      flex: 0 0 100%;
+      transition: 0.4s ease-in;
+      border-radius: 24px;
+    }
+    &.active .blog-slide__content {
+      width: 100%;
+      overflow: visible;
+      opacity: 1;
+      visibility: visible;
+      transition: 0s ease-in 0.4s;
+      border-radius: 24px;
+    }
+    &.active .blog-slide__title {
+      &--disabled {
+        display: none;
+      }
+    }
+    &__wrap {
+      height: 100%;
+      position: relative;
+      padding: 32px 12px 32px 12px;
+      overflow: visible;
+      border-radius: 24px;
+      &:after {
+        border-radius: 24px;
+      }
+    }
+
+    &__content {
+      border-radius: 24px;
+      overflow: visible;
+      justify-content: start;
+    }
+
+    &__title {
+      margin-bottom: 16px;
+      font-size: 16px;
+      &--disabled {
+        display: none;
+      }
+
+      &--large {
+        font-size: 18px;
+      }
+    }
+
+    &__link {
+      top: unset;
+      right: 50%;
+      bottom: -56px;
+      transform: translateX(50%);
+      padding: 14px 36px;
+      font-size: 14px;
+    }
+
+    &__text {
+      flex: 1 1 100%;
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+
+    &__footer {
+      display: flex;
+      flex: 1 1 auto;
+      height: 100%;
+      flex-direction: column;
+    }
+
+    &__footer-items {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: start;
+    }
+
+    &__footer-item {
+      flex: 1 1 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 0px;
+    }
+
+    &__footer-item-tag {
+      font-size: 14px;
+    }
+
+    &__footer-item-text {
+      max-width: 200px;
+      font-size: 14px;
+    }
+  }
+}

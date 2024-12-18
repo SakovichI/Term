@@ -30,7 +30,7 @@ if (abonementSlides.length) {
   });
 
   if (abonementTypeBtns) {
-    setAbonementType(abonementTypeBtns);
+    setAbonementType(abonementTypeBtns, tabs);
   }
 
   if (designBtns) {
@@ -133,7 +133,7 @@ if (certificateSlides.length) {
   }
 }
 
-function setAbonementType(elements) {
+function setAbonementType(elements, tabs) {
   elements.forEach((typeBtn) => {
     typeBtn.addEventListener("click", (e) => {
       e.preventDefault();

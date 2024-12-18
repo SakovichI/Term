@@ -19,7 +19,7 @@ const swiper = new Swiper(".tariffs-slider", {
 const abonementSwiper = new Swiper(".abonement-slider", {
   wrapperClass: "abonement-slider__wrap",
   slideClass: "abonement-slider__slide",
-  slidesPerView: 3,
+  slidesPerView: "auto",
   spaceBetween: 24,
   speed: 800,
   navigation: {
@@ -31,7 +31,7 @@ const abonementSwiper = new Swiper(".abonement-slider", {
 const certificatSwiper = new Swiper(".certeficat-slider", {
   wrapperClass: "certeficat-slider__wrap",
   slideClass: "certeficat-slider__slide",
-  slidesPerView: 3,
+  slidesPerView: "auto",
   spaceBetween: 24,
   speed: 800,
   navigation: {
@@ -43,7 +43,7 @@ const certificatSwiper = new Swiper(".certeficat-slider", {
 const discountSwiper = new Swiper(".discount-slider", {
   wrapperClass: "discount-slider__wrap",
   slideClass: "discount-slider__slide",
-  slidesPerView: 2,
+  slidesPerView: "auto",
   spaceBetween: 24,
   speed: 800,
   navigation: {
@@ -53,7 +53,25 @@ const discountSwiper = new Swiper(".discount-slider", {
 });
 
 window.addEventListener("load", () => {
-  abonementSwiper.disable();
-  certificatSwiper.disable();
-  discountSwiper.disable();
+  if (window.innerWidth > 1000) {
+    abonementSwiper.disable();
+    certificatSwiper.disable();
+    discountSwiper.disable();
+  } else {
+    abonementSwiper.enable();
+    certificatSwiper.enable();
+    discountSwiper.enable();
+  }
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 1000) {
+    abonementSwiper.disable();
+    certificatSwiper.disable();
+    discountSwiper.disable();
+  } else {
+    abonementSwiper.enable();
+    certificatSwiper.enable();
+    discountSwiper.enable();
+  }
 });

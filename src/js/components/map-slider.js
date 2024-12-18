@@ -1,6 +1,7 @@
 import Swiper from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
 Swiper.use([Navigation, Pagination]);
+const counter = document.querySelector(".map-slider__slider-text");
 const swiper = new Swiper(".map-slider", {
   wrapperClass: "map-slider__wrap",
   slideClass: "map-slider__slide",
@@ -9,6 +10,11 @@ const swiper = new Swiper(".map-slider", {
   navigation: {
     nextEl: ".map-slider__btn--next",
     prevEl: ".map-slider__btn--prev",
+  },
+  on: {
+    slideChange: function () {
+      counter.innerHTML = `${this.activeIndex + 1} этаж`;
+    },
   },
 });
 

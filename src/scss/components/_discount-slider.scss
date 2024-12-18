@@ -48,13 +48,19 @@
   &__slide {
     flex: 1 0 420px;
     min-width: none;
-    &:nth-child(1) .discount-slide__wrap {
-      background: url("../img/abonement/bg1.png") no-repeat top center / cover;
+    &:nth-child(1) {
+      & .discount-slide__img {
+        top: -50px;
+        left: -50px;
+      }
+      & .discount-slide__wrap {
+        background: url("../img/abonement/bg1.png") no-repeat top center / cover;
+      }
     }
     &:nth-child(2) {
       & .discount-slide__img {
-        top: -30px;
-        left: -30px;
+        top: -40px;
+        left: -40px;
       }
       & .discount-slide__wrap {
         background: url("../img/abonement/bg2.png") no-repeat top center / cover;
@@ -63,7 +69,7 @@
     &:nth-child(3) {
       & .discount-slide__img {
         top: -60px;
-        left: -10px;
+        left: -20px;
       }
       & .discount-slide__wrap {
         background: url("../img/abonement/bg3.png") no-repeat top center / cover;
@@ -102,6 +108,7 @@
   }
 
   &__title {
+    padding: 0 30px;
     font-family: var(--second-family);
     font-weight: 700;
     font-size: 30px;
@@ -199,5 +206,329 @@
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--dark-blue-text);
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .discount-slider {
+    overflow: hidden;
+    padding: 80px 30px 40px 30px;
+    &__inner {
+      width: 100%;
+      position: relative;
+      padding: 0 60px;
+    }
+
+    &__controls {
+    }
+
+    &__btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      & svg path {
+        fill: #202020;
+        transition: 0.2s ease-in;
+      }
+      &:disabled {
+        & svg path {
+          fill: #9d9d9d;
+          transition: 0.2s ease-in;
+        }
+      }
+      &--prev {
+        left: -10px;
+      }
+
+      &--next {
+        right: -10px;
+      }
+    }
+
+    &__wrap {
+      display: flex;
+      flex-wrap: nowrap;
+      row-gap: 0;
+    }
+
+    &__slide {
+      flex: 1 0 430px;
+      min-width: none;
+      &:nth-child(1) .discount-slide__wrap {
+        background: url("../img/abonement/bg1.png") no-repeat top center / cover;
+      }
+      &:nth-child(2) {
+        & .discount-slide__img {
+          top: -40px;
+          left: -40px;
+        }
+        & .discount-slide__wrap {
+          background: url("../img/abonement/bg2.png") no-repeat top center /
+            cover;
+        }
+      }
+      &:nth-child(3) {
+        & .discount-slide__img {
+          top: -60px;
+          left: -20px;
+        }
+        & .discount-slide__wrap {
+          background: url("../img/abonement/bg3.png") no-repeat top center /
+            cover;
+        }
+      }
+      &:nth-child(4) {
+        & .discount-slide__img {
+          top: -80px;
+          left: -0px;
+        }
+        & .discount-slide__wrap {
+          background: url("../img/abonement/bg4.png") no-repeat top center /
+            cover;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 750px) {
+  .discount-slider {
+    overflow: hidden;
+    padding: 80px 20px 40px 20px;
+    &__inner {
+      width: 100%;
+      position: relative;
+      padding: 0 40px;
+    }
+
+    &__controls {
+    }
+
+    &__btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      & svg {
+        width: 32px;
+        height: 32px;
+      }
+      &--prev {
+        left: 0px;
+      }
+
+      &--next {
+        right: 0px;
+      }
+    }
+
+    &__wrap {
+      display: flex;
+      flex-wrap: nowrap;
+      row-gap: 0;
+    }
+
+    &__slide {
+      flex: 1 0 360px;
+      min-width: none;
+      &:nth-child(1) {
+        & .discount-slide__img {
+          top: -50px;
+          left: -30px;
+          width: 140px;
+          height: auto;
+        }
+        & .discount-slide__wrap {
+          background: url("../img/abonement/bg1.png") no-repeat top center /
+            cover;
+        }
+      }
+      &:nth-child(2) {
+        & .discount-slide__img {
+          top: -20px;
+          left: -20px;
+          width: 100px;
+          height: auto;
+        }
+        & .discount-slide__wrap {
+          background: url("../img/abonement/bg2.png") no-repeat top center /
+            cover;
+        }
+      }
+      &:nth-child(3) {
+        & .discount-slide__img {
+          top: -40px;
+          left: -20px;
+          width: 100px;
+          height: auto;
+        }
+        & .discount-slide__wrap {
+          background: url("../img/abonement/bg3.png") no-repeat top center /
+            cover;
+        }
+      }
+      &:nth-child(4) {
+        & .discount-slide__img {
+          top: -80px;
+          left: -0px;
+          width: 100px;
+          height: auto;
+        }
+        & .discount-slide__wrap {
+          background: url("../img/abonement/bg4.png") no-repeat top center /
+            cover;
+        }
+      }
+    }
+  }
+
+  .discount-slide {
+    height: 100%;
+    border-radius: 40px;
+    box-shadow: 4px 4px 16px 0 rgba(203, 210, 216, 0.4);
+    background: #fff;
+    &__wrap {
+      height: 100%;
+      padding: 40px 20px;
+    }
+
+    &__title {
+      padding: 0 30px;
+      font-size: 24px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      line-height: 100%;
+    }
+
+    &__text {
+      margin-top: 8px;
+      font-size: 16px;
+      &--bold {
+        font-size: 16px;
+        line-height: 120%;
+      }
+    }
+
+    &__footer {
+      margin-top: 16px;
+      font-size: 16px;
+      line-height: 125%;
+    }
+
+    &__price {
+      margin-top: 16px;
+    }
+
+    &__price-title {
+      display: block;
+      margin-bottom: 16px;
+      font-size: 22px;
+      line-height: 146%;
+    }
+
+    &__price-wrap {
+      display: flex;
+      align-items: center;
+    }
+
+    &__price-value {
+      font-size: 22px;
+    }
+
+    &__price-time {
+      font-size: 22px;
+    }
+  }
+}
+
+@media all and (max-width: 500px) {
+  .discount-slider {
+    overflow: hidden;
+    padding: 80px 15px 40px 15px;
+    &__inner {
+      width: 100%;
+      position: relative;
+      padding: 0 30px;
+    }
+
+    &__controls {
+    }
+
+    &__slide {
+      flex: 1 0 320px;
+      min-width: none;
+    }
+  }
+
+  .discount-slide {
+    height: 100%;
+    border-radius: 40px;
+    box-shadow: 4px 4px 16px 0 rgba(203, 210, 216, 0.4);
+    background: #fff;
+    &__wrap {
+      height: 100%;
+      padding: 40px 20px;
+    }
+
+    &__title {
+      padding: 0 30px;
+      font-size: 24px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      line-height: 100%;
+    }
+
+    &__text {
+      margin-top: 8px;
+      font-size: 16px;
+      &--bold {
+        font-size: 16px;
+        line-height: 120%;
+      }
+    }
+
+    &__footer {
+      margin-top: 16px;
+      font-size: 16px;
+      line-height: 125%;
+    }
+
+    &__price {
+      margin-top: 16px;
+    }
+
+    &__price-title {
+      display: block;
+      margin-bottom: 16px;
+      font-size: 22px;
+      line-height: 146%;
+    }
+
+    &__price-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+    }
+
+    &__price-item {
+      padding: 0;
+      &:not(:last-child) {
+        border-right: none;
+      }
+    }
+
+    &__price-value {
+      font-size: 22px;
+    }
+
+    &__price-time {
+      font-size: 22px;
+    }
   }
 }

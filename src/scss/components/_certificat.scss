@@ -231,3 +231,102 @@
     }
   }
 }
+
+@media all and (max-width: 1000px) {
+  .certeficat-slider {
+    padding: 80px 20px 40px 20px;
+    overflow: hidden;
+    &__inner {
+      position: relative;
+      padding: 0 70px;
+    }
+
+    &__controls {
+      & button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &__btn--prev {
+      left: 0;
+    }
+    &__btn--next {
+      right: 0;
+    }
+
+    &__wrap {
+      display: flex;
+      flex-wrap: nowrap;
+      column-gap: 0;
+      row-gap: 0;
+    }
+
+    &__slide {
+      flex: 0 0 360px;
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  .certeficat-slider {
+    padding: 40px 10px 40px 10px;
+    overflow: hidden;
+    &__inner {
+      position: relative;
+      padding: 0 30px;
+    }
+
+    &__slide {
+      flex: 0 0 280px;
+    }
+  }
+
+  .certeficat-slide {
+    &__wrap {
+      padding: 60px 20px 20px 20px;
+    }
+
+    &__pretitle {
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+
+    &__title {
+      font-size: 72px;
+    }
+
+    &__subtitle {
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+
+    &__label {
+      margin-bottom: 4px;
+      align-self: start;
+      font-family: var(--font-family);
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 145%;
+      color: #2d2d2d;
+    }
+
+    &__discount {
+      font-size: 20px;
+    }
+
+    &__price {
+      margin: 12px 0;
+      font-size: 24px;
+      &:after {
+        content: " РУБ";
+      }
+    }
+    &__link {
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

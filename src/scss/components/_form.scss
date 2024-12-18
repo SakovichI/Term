@@ -350,6 +350,7 @@
     color: #fff;
   }
 }
+
 .certificate-design {
   &__btn-select {
     border: 2px solid var(--blue-text);
@@ -400,6 +401,7 @@
     }
   }
 }
+
 .abonement-data {
   &__column {
     flex: 1 1 30%;
@@ -602,11 +604,141 @@
 
 @media all and (max-width: 1100px) {
   .abonement {
+    &__data {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
     &__btn-pay {
       margin-top: 50px;
       align-self: center;
     }
   }
+
+  .certificate {
+    & .certeficat-slide {
+      flex: 1 1 30%;
+      min-width: 320px;
+      max-width: 100%;
+      &.selected {
+        border: 2px solid var(--blue-text);
+      }
+      &__btn-select {
+        border: 2px solid var(--blue-text);
+        border-radius: 87px;
+        padding: 16px 20px;
+        box-shadow: 2px 2px 8px 0 rgba(0, 17, 27, 0.3);
+        background: radial-gradient(
+          333.85% 133.49% at 1.07% 13.33%,
+          #1897ff 0%,
+          #32bbff 65.47%
+        );
+        transition: 0.2s ease-in;
+      }
+
+      &__btn-select-text {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+      }
+    }
+    &__type {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      row-gap: 60px;
+      column-gap: 40px;
+    }
+  }
+
+  .abonement-design {
+    flex: 1 1 30%;
+    max-width: 412px;
+    min-width: 320px;
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      & img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 20px;
+        &.selected {
+          border: 2px solid var(--blue-text);
+        }
+      }
+      & button {
+        width: 240px;
+      }
+    }
+    &__btn-select {
+      border: 2px solid var(--blue-text);
+      border-radius: 87px;
+      padding: 16px 20px;
+      box-shadow: 2px 2px 8px 0 rgba(0, 17, 27, 0.3);
+      background: radial-gradient(
+        333.85% 133.49% at 1.07% 13.33%,
+        #1897ff 0%,
+        #32bbff 65.47%
+      );
+      transition: 0.2s ease-in;
+      &:hover {
+        box-shadow: 2px 2px 24px 0 rgba(0, 17, 27, 0.7);
+        background: radial-gradient(
+          333.85% 133.49% at 1.07% 13.33%,
+          #1897ff 0%,
+          #1897ff 100%
+        );
+        transition: 0.2s ease-in;
+      }
+      &:focus {
+        box-shadow: 2px 2px 24px 0 rgba(0, 17, 27, 0.7);
+        background: radial-gradient(
+          333.85% 133.49% at 1.07% 13.33%,
+          #007ce2 0%,
+          #007ce2 100%
+        );
+        transition: 0.2s ease-in;
+      }
+      &:active {
+        box-shadow: 2px 2px 24px 0 rgba(0, 17, 27, 0.7);
+        background: radial-gradient(
+          333.85% 133.49% at 1.07% 13.33%,
+          #007ce2 0%,
+          #007ce2 100%
+        );
+        transition: 0.2s ease-in;
+      }
+      &:disabled {
+        box-shadow: 2px 2px 8px 0 rgba(0, 17, 27, 0.6);
+        background: radial-gradient(
+          333.85% 133.49% at 1.07% 13.33%,
+          #1897ff 0%,
+          #32bbff 65.47%
+        );
+        transition: 0.2s ease-in;
+      }
+    }
+
+    &__btn-select-text {
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+    }
+  }
+
   .abonement-confirm {
     &__title {
       font-family: var(--second-family);
@@ -640,6 +772,205 @@
     &__img {
       width: 60%;
       object-fit: contain;
+    }
+  }
+
+  .abonement-data {
+    &__column {
+      flex: 1 1 30%;
+      display: flex;
+      flex-direction: column;
+      padding: 24px 24px 40px 24px;
+      &:first-child {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 40px;
+        & .abonement-data__title {
+          margin-bottom: 32px;
+          flex: 1 1 100%;
+        }
+
+        & .radio {
+          margin-bottom: 32px;
+          flex: 0 1 30%;
+        }
+      }
+      &:last-child {
+        flex: 1 1 60%;
+      }
+      & .radio:nth-child(3) {
+        align-items: start;
+        flex: 1 1 auto;
+      }
+    }
+
+    &__title {
+      margin-bottom: 20px;
+      font-size: 26px;
+    }
+
+    &__text {
+      max-width: 100%;
+      font-size: 16px;
+    }
+  }
+}
+
+@media all and (max-width: 730px) {
+  .abonement-form {
+    .abonement-slide {
+      flex: 1 1 30%;
+      min-width: 320px;
+      max-width: 100%;
+
+      &__btn-select {
+        padding: 12px 20px;
+      }
+
+      &__btn-select-text {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 625px) {
+  .abonement {
+    margin-top: 12px;
+    &__btn-pay {
+      margin-top: 24px;
+      font-size: 14px;
+    }
+    &__designe {
+      margin-top: 4px;
+    }
+    &__type {
+      margin-top: 70px;
+      row-gap: 90px;
+    }
+  }
+  .certificate {
+    & .certeficat-slide {
+      flex: 1 1 30%;
+      min-width: 320px;
+      max-width: 100%;
+      &__btn-select {
+        padding: 12px 20px;
+      }
+
+      &__btn-select-text {
+        font-size: 14px;
+      }
+    }
+    &__type {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      row-gap: 32px;
+      column-gap: 32px;
+    }
+  }
+  .abonement-confirm {
+    &__title {
+      font-size: 20px;
+      text-transform: inherit;
+    }
+    &__column-data {
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &__column {
+      &:last-child {
+        column-gap: 16px;
+        & .abonement-confirm__row {
+          &:first-child {
+            flex: 1 1 100%;
+          }
+          &:last-child {
+            margin-top: 16px;
+            align-self: end;
+          }
+        }
+      }
+    }
+
+    &__row {
+      &:not(:first-child) {
+        padding-top: 8px;
+        margin-top: 8px;
+      }
+      &--price:last-child {
+        text-align: center;
+        margin-top: 16px;
+      }
+    }
+    &__value {
+      font-size: 16px;
+      &--bold {
+        font-size: 16px;
+      }
+    }
+    &__subvalue {
+      font-size: 16px;
+      &--bold {
+        font-size: 16px;
+      }
+    }
+    &__img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  .custom-checkbox {
+    margin-top: 20px;
+    position: relative;
+
+    &__content {
+      display: flex;
+      align-items: center;
+
+      padding-left: 40px;
+      cursor: pointer;
+
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 125%;
+      color: var(--grey-link);
+    }
+  }
+  .abonement-design {
+    flex: 1 1 30%;
+    max-width: 100%;
+    min-width: 320px;
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      & img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 20px;
+        &.selected {
+          border: 2px solid var(--blue-text);
+        }
+      }
+    }
+    &__btn-select {
+      padding: 12px 24px;
+    }
+    &__btn-select-text {
+      font-size: 14px;
+    }
+  }
+
+  .certificate-design {
+    &__btn-select {
+      padding: 12px 24px;
     }
   }
 }
