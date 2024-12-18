@@ -4,9 +4,15 @@ Swiper.use([Navigation, Pagination]);
 const swiper = new Swiper(".reviews-slider", {
   wrapperClass: "reviews-slider__wrap",
   slideClass: "reviews-slider__slide",
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 30,
   speed: 800,
+  autoHeight: true,
+  breakpoints: {
+    800: {
+      slidesPerView: 2,
+    },
+  },
   navigation: {
     nextEl: ".reviews-slider__btn--next",
     prevEl: ".reviews-slider__btn--prev",
@@ -27,6 +33,12 @@ const swiper = new Swiper(".reviews-slider", {
           const targetWrap = e.currentTarget.closest(".review");
           const text = targetWrap.querySelector(".review__text");
           text.classList.toggle("active");
+          if (text.classList.contains("active")) {
+            btn.innerText = "Скрыть отзыв";
+          } else {
+            btn.innerText = "Читать весь отзыв";
+          }
+          swiper.updateAutoHeight();
         });
       });
     },

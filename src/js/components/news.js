@@ -4,12 +4,17 @@ Swiper.use([Navigation, Pagination]);
 const newsSwiper = new Swiper(".news-slider", {
   wrapperClass: "news-slider__wrap",
   slideClass: "news-slider__slide",
-  slidesPerView: 3,
+  slidesPerView: 1,
   speed: 800,
-  spaceBetween: "20",
+  spaceBetween: "24",
   navigation: {
     nextEl: ".news-slider__btn--next",
     prevEl: ".news-slider__btn--prev",
+  },
+  breakpoints: {
+    700: {
+      slidesPerView: 3,
+    },
   },
   init: false,
   on: {

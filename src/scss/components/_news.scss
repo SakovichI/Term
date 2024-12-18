@@ -1,5 +1,8 @@
 .news {
   margin-bottom: 60px;
+  & .title-2 {
+    margin-bottom: 32px;
+  }
   &__title {
     font-family: var(--font-family);
     font-weight: 700;
@@ -76,5 +79,91 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .news {
+    margin-bottom: 60px;
+    & .title-2 {
+      margin-bottom: 32px;
+    }
+    &__title {
+      font-size: 18px;
+    }
+
+    &__slider-inner {
+      position: relative;
+      &.active {
+        padding: 0 80px;
+      }
+    }
+
+    &__date {
+      font-size: 18px;
+    }
+  }
+}
+
+@media all and (max-width: 700px) {
+  .news {
+    margin-bottom: 40px;
+    & .title-2 {
+      margin-bottom: 32px;
+    }
+    &__title {
+      font-size: 18px;
+    }
+
+    &__slider-inner {
+      position: relative;
+      padding: 0 40px;
+    }
+
+    &__date {
+      font-size: 16px;
+    }
+  }
+  .news-slider {
+    &__controls {
+      display: block;
+    }
+
+    &__btn {
+      position: absolute;
+      top: 40%;
+      transform: translateY(-50%);
+      z-index: 2;
+      & svg {
+        width: 32px;
+        height: 32px;
+      }
+      & path {
+        fill: var(--dark-grey-text);
+        transition: 0.2s ease-in;
+      }
+      &:disabled path {
+        fill: var(--grey-link);
+        transition: 0.2s ease-in;
+      }
+      &--prev {
+        left: 0;
+      }
+
+      &--next {
+        right: 0;
+      }
+    }
+
+    &__wrap {
+      display: flex;
+    }
+
+    &__slide {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }

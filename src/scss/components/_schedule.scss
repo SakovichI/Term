@@ -129,12 +129,17 @@
 }
 
 .schedule-slider {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   &__wrap {
+    width: 100%;
+    max-height: max-content;
     display: flex;
   }
 
   &__slide {
+    height: max-content;
     flex: 0 0 auto;
   }
 }

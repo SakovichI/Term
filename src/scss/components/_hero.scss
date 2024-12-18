@@ -120,13 +120,17 @@
 
     &__content-text {
       max-width: 300px;
-      font-size: 20px;
+      font-size: 16px;
     }
 
     &__content-link {
       position: absolute;
       bottom: 30px;
       right: 0;
+      & img {
+        width: 180px;
+        height: auto;
+      }
     }
   }
 }

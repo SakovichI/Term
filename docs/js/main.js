@@ -883,12 +883,17 @@ swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper_modules__WEBPACK_IMPO
 const newsSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".news-slider", {
   wrapperClass: "news-slider__wrap",
   slideClass: "news-slider__slide",
-  slidesPerView: 3,
+  slidesPerView: 1,
   speed: 800,
-  spaceBetween: "20",
+  spaceBetween: "24",
   navigation: {
     nextEl: ".news-slider__btn--next",
     prevEl: ".news-slider__btn--prev"
+  },
+  breakpoints: {
+    700: {
+      slidesPerView: 3
+    }
   },
   init: false,
   on: {
@@ -921,9 +926,15 @@ swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper_modules__WEBPACK_IMPO
 const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".reviews-slider", {
   wrapperClass: "reviews-slider__wrap",
   slideClass: "reviews-slider__slide",
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 30,
   speed: 800,
+  autoHeight: true,
+  breakpoints: {
+    800: {
+      slidesPerView: 2
+    }
+  },
   navigation: {
     nextEl: ".reviews-slider__btn--next",
     prevEl: ".reviews-slider__btn--prev"
@@ -944,6 +955,12 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".reviews-slid
           const targetWrap = e.currentTarget.closest(".review");
           const text = targetWrap.querySelector(".review__text");
           text.classList.toggle("active");
+          if (text.classList.contains("active")) {
+            btn.innerText = "Скрыть отзыв";
+          } else {
+            btn.innerText = "Читать весь отзыв";
+          }
+          swiper.updateAutoHeight();
         });
       });
     }
@@ -969,6 +986,7 @@ const scheduleSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".sche
   slideClass: "schedule-slider__slide",
   slidesPerView: 1,
   spaceBetween: 24,
+  autoHeight: true,
   speed: 800,
   init: false,
   navigation: {
@@ -1010,6 +1028,7 @@ function sortTable(activeSlide) {
         }
       });
       btn.classList.add("active");
+      scheduleSwiper.updateAutoHeight();
     });
   });
 }

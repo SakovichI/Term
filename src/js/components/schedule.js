@@ -6,6 +6,7 @@ const scheduleSwiper = new Swiper(".schedule-slider", {
   slideClass: "schedule-slider__slide",
   slidesPerView: 1,
   spaceBetween: 24,
+  autoHeight: true,
   speed: 800,
   init: false,
   navigation: {
@@ -53,6 +54,7 @@ function sortTable(activeSlide) {
       });
 
       btn.classList.add("active");
+      scheduleSwiper.updateAutoHeight();
     });
   });
 }
