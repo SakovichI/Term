@@ -3330,9 +3330,9 @@ a {
     flex: 0 0 320px;
   }
   .tariffs-slide {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 280px;
-    flex: 0 0 280px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
     position: relative;
   }
   .tariffs-slide__img {
@@ -4775,9 +4775,9 @@ a {
     right: -15px;
   }
   .abonement-slide {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 280px;
-    flex: 0 0 280px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
   }
   .abonement-slide__wrap {
     height: 100%;
@@ -5108,9 +5108,9 @@ a {
     padding: 0 30px;
   }
   .certeficat-slider__slide {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 280px;
-    flex: 0 0 280px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
   }
   .certeficat-slide__wrap {
     padding: 60px 20px 20px 20px;
@@ -5158,7 +5158,7 @@ a {
   }
 }
 .tariffs .tabs-entry {
-  padding: 32px 0;
+  padding: 32px 0 0 0;
 }
 
 .discount-slider {
@@ -5579,6 +5579,13 @@ a {
     font-size: 22px;
   }
 }
+@media all and (max-width: 600px) {
+  .discount-slider__slide {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
+  }
+}
 @media all and (max-width: 500px) {
   .discount-slider {
     overflow: hidden;
@@ -5590,9 +5597,6 @@ a {
     padding: 0 30px;
   }
   .discount-slider__slide {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 0 320px;
-    flex: 1 0 320px;
     min-width: none;
   }
   .discount-slide {

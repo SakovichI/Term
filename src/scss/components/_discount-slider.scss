@@ -1,6 +1,6 @@
 .tariffs {
   & .tabs-entry {
-    padding: 32px 0;
+    padding: 32px 0 0 0;
   }
 }
 .discount-slider {
@@ -444,6 +444,14 @@
   }
 }
 
+@media all and (max-width: 600px) {
+  .discount-slider {
+    &__slide {
+      flex: 1 0 100%;
+    }
+  }
+}
+
 @media all and (max-width: 500px) {
   .discount-slider {
     overflow: hidden;
@@ -458,7 +466,6 @@
     }
 
     &__slide {
-      flex: 1 0 320px;
       min-width: none;
     }
   }
