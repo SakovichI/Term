@@ -3401,7 +3401,7 @@ form .tabs-entry__pills .btn:not(:disabled) {
   }
   .tariffs-slide__item-line {
     margin: 0 10px;
-    border: 2px solid #368ddd;
+    border: 1px solid #368ddd;
   }
   .tariffs-slide__item-title {
     margin-top: 0;
@@ -3409,7 +3409,7 @@ form .tabs-entry__pills .btn:not(:disabled) {
     font-size: 16px;
   }
   .tariffs-slide__footer {
-    font-size: 18px;
+    font-size: 16px;
   }
   .tabs > .select {
     position: relative;
