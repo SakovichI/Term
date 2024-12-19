@@ -432,7 +432,8 @@
       }
 
       & > .select__header {
-        gap: 20px;
+        padding: 8px 47px;
+        gap: 10px;
         border: 2px solid var(--blue-text);
       }
 
@@ -450,7 +451,8 @@
         white-space: nowrap;
       }
       & > .select__body {
-        width: max-content;
+        width: 100%;
+        min-width: max-content;
         top: 105%;
         padding: 16px;
         border-radius: 16px;

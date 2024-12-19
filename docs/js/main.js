@@ -1070,11 +1070,12 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".tariffs-slid
   wrapperClass: "tariffs-slider__wrap",
   slideClass: "tariffs-slider__slide",
   slidesPerView: 1,
-  spaceBetween: 24,
+  spaceBetween: 40,
   speed: 800,
   breakpoints: {
     600: {
-      slidesPerView: "auto"
+      slidesPerView: "auto",
+      spaceBetween: 24
     }
   },
   navigation: {
@@ -1118,10 +1119,11 @@ const discountSwiper = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".disc
   wrapperClass: "discount-slider__wrap",
   slideClass: "discount-slider__slide",
   slidesPerView: "1",
-  spaceBetween: 24,
+  spaceBetween: 40,
   breakpoints: {
     600: {
-      slidesPerView: "auto"
+      slidesPerView: "auto",
+      spaceBetween: 24
     }
   },
   speed: 800,

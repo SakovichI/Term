@@ -1,3 +1,35 @@
+form {
+  .tabs-entry {
+    &__pills {
+      padding-bottom: 10px;
+      overflow-x: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      & .btn {
+        padding: 12px 20px;
+        background: #fff;
+        border: 2px solid var(--blue-text);
+        color: var(--blue-text);
+        white-space: nowrap;
+      }
+      & .btn.active {
+        background: linear-gradient(108deg, #4897e0 0%, #4fa0e8 98%);
+        color: #fff;
+      }
+
+      & .btn:disabled {
+        background: rgba(255, 255, 255, 0.5);
+        border: 2px solid rgba(0, 67, 168, 0.5);
+        color: var(--dark-blue-text);
+      }
+      & .btn:not(:disabled) {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
 .abonement-form {
   .abonement-slide {
     flex: 1 1 30%;
@@ -144,35 +176,7 @@
     column-gap: 40px;
   }
 }
-.tabs-entry {
-  &__pills {
-    padding-bottom: 10px;
-    overflow-x: auto;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-    & .btn {
-      padding: 12px 20px;
-      background: #fff;
-      border: 2px solid var(--blue-text);
-      color: var(--blue-text);
-      white-space: nowrap;
-    }
-    & .btn.active {
-      background: linear-gradient(108deg, #4897e0 0%, #4fa0e8 98%);
-      color: #fff;
-    }
 
-    & .btn:disabled {
-      background: rgba(255, 255, 255, 0.5);
-      border: 2px solid rgba(0, 67, 168, 0.5);
-      color: var(--dark-blue-text);
-    }
-    & .btn:not(:disabled) {
-      cursor: pointer;
-    }
-  }
-}
 .abonement {
   margin-top: 20px;
   flex-direction: column;

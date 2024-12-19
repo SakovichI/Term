@@ -6,6 +6,10 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     & .btn {
       border: 2px solid #55c3ff;
@@ -17,6 +21,7 @@
       line-height: 140%;
       color: var(--dark-blue-text);
       transition: 0.2s ease-in;
+      white-space: nowrap;
       &:hover {
         background: #cbecfe60;
         transition: 0.2s ease-in;
@@ -60,11 +65,29 @@
 
     &__pills {
       & .btn {
+        padding: 8px 12px;
         font-family: var(--font-family);
         font-weight: 600;
         font-size: 16px;
         line-height: 145%;
-        color: var(--blue-text);
+        color: var(--dark-blue-text);
+      }
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  .tabs-entry {
+    padding: 16px 0px 10px 0px;
+
+    &__pills {
+      & .btn {
+        padding: 8px 12px;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 145%;
+        color: var(--dark-blue-text);
       }
     }
   }

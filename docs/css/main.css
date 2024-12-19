@@ -633,6 +633,10 @@ a {
   -ms-flex-align: center;
   align-items: center;
   gap: 20px;
+  overflow-x: auto;
+}
+.tabs-entry__pills::-webkit-scrollbar {
+  display: none;
 }
 .tabs-entry__pills .btn {
   border: 2px solid #55c3ff;
@@ -645,6 +649,7 @@ a {
   color: var(--dark-blue-text);
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
+  white-space: nowrap;
 }
 .tabs-entry__pills .btn:hover {
   background: rgba(203, 236, 254, 0.3764705882);
@@ -693,11 +698,25 @@ a {
     padding: 32px 0px 10px 0px;
   }
   .tabs-entry__pills .btn {
+    padding: 8px 12px;
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 16px;
     line-height: 145%;
-    color: var(--blue-text);
+    color: var(--dark-blue-text);
+  }
+}
+@media all and (max-width: 600px) {
+  .tabs-entry {
+    padding: 16px 0px 10px 0px;
+  }
+  .tabs-entry__pills .btn {
+    padding: 8px 12px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 145%;
+    color: var(--dark-blue-text);
   }
 }
 .breadcrumbs {
@@ -1194,6 +1213,33 @@ a {
     text-align: left;
   }
 }
+form .tabs-entry__pills {
+  padding-bottom: 10px;
+  overflow-x: auto;
+}
+form .tabs-entry__pills::-webkit-scrollbar {
+  display: none;
+}
+form .tabs-entry__pills .btn {
+  padding: 12px 20px;
+  background: #fff;
+  border: 2px solid var(--blue-text);
+  color: var(--blue-text);
+  white-space: nowrap;
+}
+form .tabs-entry__pills .btn.active {
+  background: linear-gradient(108deg, #4897e0 0%, #4fa0e8 98%);
+  color: #fff;
+}
+form .tabs-entry__pills .btn:disabled {
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(0, 67, 168, 0.5);
+  color: var(--dark-blue-text);
+}
+form .tabs-entry__pills .btn:not(:disabled) {
+  cursor: pointer;
+}
+
 .abonement-form .abonement-slide {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 30%;
@@ -1323,33 +1369,6 @@ a {
   -webkit-column-gap: 40px;
   -moz-column-gap: 40px;
   column-gap: 40px;
-}
-
-.tabs-entry__pills {
-  padding-bottom: 10px;
-  overflow-x: auto;
-}
-.tabs-entry__pills::-webkit-scrollbar {
-  display: none;
-}
-.tabs-entry__pills .btn {
-  padding: 12px 20px;
-  background: #fff;
-  border: 2px solid var(--blue-text);
-  color: var(--blue-text);
-  white-space: nowrap;
-}
-.tabs-entry__pills .btn.active {
-  background: linear-gradient(108deg, #4897e0 0%, #4fa0e8 98%);
-  color: #fff;
-}
-.tabs-entry__pills .btn:disabled {
-  background: rgba(255, 255, 255, 0.5);
-  border: 2px solid rgba(0, 67, 168, 0.5);
-  color: var(--dark-blue-text);
-}
-.tabs-entry__pills .btn:not(:disabled) {
-  cursor: pointer;
 }
 
 .abonement {
@@ -3412,7 +3431,8 @@ a {
     transform: rotate(180deg);
   }
   .tabs > .select > .select__header {
-    gap: 20px;
+    padding: 8px 47px;
+    gap: 10px;
     border: 2px solid var(--blue-text);
   }
   .tabs > .select > .select__icon {
@@ -3429,9 +3449,10 @@ a {
     white-space: nowrap;
   }
   .tabs > .select > .select__body {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+    width: 100%;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
     top: 105%;
     padding: 16px;
     border-radius: 16px;
@@ -5256,10 +5277,6 @@ a {
     align-items: center;
   }
 }
-.tariffs .tabs-entry {
-  padding: 32px 0 0 0;
-}
-
 .discount-slider {
   overflow: hidden;
   padding: 80px 20px 40px 20px;
