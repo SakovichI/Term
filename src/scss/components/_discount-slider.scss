@@ -47,7 +47,7 @@
 
   &__slide {
     flex: 1 0 420px;
-    min-width: none;
+    min-width: unset;
     &:nth-child(1) {
       & .discount-slide__img {
         top: -50px;
@@ -254,7 +254,7 @@
 
     &__slide {
       flex: 1 0 430px;
-      min-width: none;
+      min-width: unset;
       &:nth-child(1) .discount-slide__wrap {
         background: url("../img/abonement/bg1.png") no-repeat top center / cover;
       }
@@ -331,7 +331,7 @@
 
     &__slide {
       flex: 1 0 360px;
-      min-width: none;
+      min-width: unset;
       &:nth-child(1) {
         & .discount-slide__img {
           top: -50px;
@@ -371,7 +371,7 @@
       &:nth-child(4) {
         & .discount-slide__img {
           top: -80px;
-          left: -0px;
+          left: -10px;
           width: 100px;
           height: auto;
         }
@@ -466,7 +466,7 @@
     }
 
     &__slide {
-      min-width: none;
+      min-width: unset;
     }
   }
 

@@ -41,6 +41,14 @@
     &:first-child {
       margin-bottom: 20px;
     }
+    &:first-child .contacts-content__item {
+      &:first-child {
+        display: none;
+        & .contacts-content__link {
+          text-transform: inherit;
+        }
+      }
+    }
   }
 
   &__item-label {
@@ -195,6 +203,11 @@
     &__links {
       &:first-child {
         margin-bottom: 0;
+      }
+      &:first-child .contacts-content__item {
+        &:first-child {
+          display: flex;
+        }
       }
     }
 

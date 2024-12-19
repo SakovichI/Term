@@ -1,5 +1,8 @@
 .tariffs {
   padding-bottom: 80px;
+  &__title {
+    margin-bottom: 40px;
+  }
   &__slider {
   }
 }
@@ -156,8 +159,8 @@
   &__item {
     margin-bottom: 50px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-self: stretch;
   }
 
   &__item-text {
@@ -332,7 +335,7 @@
     padding-bottom: 30px;
     &__slider-inner {
       position: relative;
-      padding: 0 40px;
+      padding: 0 20px;
     }
     &__slider {
       padding: 60px 20px 20px 20px;
@@ -350,6 +353,11 @@
 }
 
 @media all and (max-width: 600px) {
+  .tariffs {
+    &__title {
+      margin-bottom: 32px;
+    }
+  }
   .tariffs-slider {
     margin-top: 0px;
     position: relative;
@@ -361,6 +369,9 @@
   .tariffs-slide {
     flex: 1 0 100%;
     position: relative;
+    &__wrap {
+      padding: 48px 20px 30px 20px;
+    }
     &__img {
       top: -20px;
       left: -20px;

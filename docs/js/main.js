@@ -847,11 +847,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination]);
-const counter = document.querySelector(".map-slider__slider-text");
+const counter = document.querySelector(".map-slider__slide-text");
 const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".map-slider", {
   wrapperClass: "map-slider__wrap",
   slideClass: "map-slider__slide",
   slidesPerView: "auto",
+  initialSlide: 1,
   speed: 800,
   navigation: {
     nextEl: ".map-slider__btn--next",
