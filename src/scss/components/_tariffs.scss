@@ -7,6 +7,9 @@
   }
 }
 .tabs {
+  & > .select {
+    display: none;
+  }
   &__nav {
     max-width: max-content;
     display: flex;
@@ -338,7 +341,7 @@
       padding: 0 20px;
     }
     &__slider {
-      padding: 60px 20px 20px 20px;
+      padding: 30px 20px 20px 20px;
       overflow: hidden;
     }
   }
@@ -373,7 +376,7 @@
       padding: 48px 20px 30px 20px;
     }
     &__img {
-      top: -20px;
+      top: -25px;
       left: -20px;
       width: 80px;
       height: auto;
@@ -414,8 +417,69 @@
   }
 
   .tabs {
+    & > .select {
+      position: relative;
+      z-index: 90;
+      display: block;
+      width: max-content;
+      margin: 0;
+      &.is-active .select__header {
+        border-radius: 24px;
+      }
+      &.is-active .select__icon {
+        transition: 0.2s ease-in;
+        transform: rotate(180deg);
+      }
+
+      & > .select__header {
+        gap: 20px;
+        border: 2px solid var(--blue-text);
+      }
+
+      & > .select__icon {
+        transition: 0.2s ease-in;
+      }
+
+      & .select__current {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #2b478e;
+        white-space: nowrap;
+      }
+      & > .select__body {
+        width: max-content;
+        top: 105%;
+        padding: 16px;
+        border-radius: 16px;
+
+        background: linear-gradient(89deg, #5198e0 0%, #0f7ce1 100%);
+      }
+
+      & .select__item {
+        padding: 8px 12px;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: transparent;
+        transition: 0.2s ease-in;
+        white-space: nowrap;
+        border-radius: 16px;
+        &:hover {
+          background-color: #fff;
+          color: #2b478e;
+          transition: 0.2s ease-in;
+        }
+      }
+    }
+
     &__nav {
-      display: flex;
+      display: none;
       align-items: center;
       gap: 20px;
       padding: 0;
@@ -426,6 +490,12 @@
 
     &__nav-btn {
       font-size: 16px;
+    }
+  }
+
+  .blog {
+    & .tabs > .select {
+      margin: 0 auto;
     }
   }
 }

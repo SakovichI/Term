@@ -411,7 +411,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.mjs");
 /* harmony import */ var swiper_modules__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! swiper/modules */ "./node_modules/swiper/modules/index.mjs");
 
-const tabs = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]("blog");
+const tabsBlog = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]("blog");
 
 const modal = new graph_modal__WEBPACK_IMPORTED_MODULE_1__["default"]();
 
@@ -454,6 +454,15 @@ blogsSliders.forEach((el, index) => {
   });
   blogSwiper.init();
 });
+const mobileTabs = document.querySelector("[data-select-blog]");
+if (mobileTabs) {
+  const selectItems = mobileTabs.querySelectorAll(".select__item");
+  selectItems.forEach((item, index) => {
+    item.addEventListener("click", e => {
+      tabsBlog.tabsBtns[index].click();
+    });
+  });
+}
 
 /***/ }),
 
@@ -1143,6 +1152,15 @@ window.addEventListener("resize", () => {
     discountSwiper.enable();
   }
 });
+const mobileTabs = document.querySelector("[data-select]");
+if (mobileTabs) {
+  const selectItems = mobileTabs.querySelectorAll(".select__item");
+  selectItems.forEach((item, index) => {
+    item.addEventListener("click", e => {
+      tabs.tabsBtns[index].click();
+    });
+  });
+}
 
 /***/ }),
 
@@ -1552,10 +1570,12 @@ let select = function () {
     currentText.innerText = text;
     select.classList.remove("is-active");
     const card = select.closest(".abonement-slide");
-    const type = card.querySelector(".abonement-slide__title");
-    const count = card.querySelector(".counter__count");
-    const period = card.querySelector(".select__current");
-    changeAbonementPrice(card, type, count, period);
+    if (card) {
+      const type = card.querySelector(".abonement-slide__title");
+      const count = card.querySelector(".counter__count");
+      const period = card.querySelector(".select__current");
+      changeAbonementPrice(card, type, count, period);
+    }
   }
 };
 select();

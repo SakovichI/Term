@@ -95,3 +95,13 @@ window.addEventListener("resize", () => {
     discountSwiper.enable();
   }
 });
+
+const mobileTabs = document.querySelector("[data-select]");
+if (mobileTabs) {
+  const selectItems = mobileTabs.querySelectorAll(".select__item");
+  selectItems.forEach((item, index) => {
+    item.addEventListener("click", (e) => {
+      tabs.tabsBtns[index].click();
+    });
+  });
+}

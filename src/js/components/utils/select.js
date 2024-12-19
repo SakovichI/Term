@@ -176,10 +176,12 @@ let select = function () {
     currentText.innerText = text;
     select.classList.remove("is-active");
     const card = select.closest(".abonement-slide");
-    const type = card.querySelector(".abonement-slide__title");
-    const count = card.querySelector(".counter__count");
-    const period = card.querySelector(".select__current");
-    changeAbonementPrice(card, type, count, period);
+    if (card) {
+      const type = card.querySelector(".abonement-slide__title");
+      const count = card.querySelector(".counter__count");
+      const period = card.querySelector(".select__current");
+      changeAbonementPrice(card, type, count, period);
+    }
   }
 };
 

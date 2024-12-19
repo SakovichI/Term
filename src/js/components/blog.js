@@ -1,5 +1,5 @@
 import GraphTabs from "graph-tabs";
-const tabs = new GraphTabs("blog");
+const tabsBlog = new GraphTabs("blog");
 import GraphModal from "graph-modal";
 const modal = new GraphModal();
 
@@ -47,3 +47,13 @@ blogsSliders.forEach((el, index) => {
 
   blogSwiper.init();
 });
+
+const mobileTabs = document.querySelector("[data-select-blog]");
+if (mobileTabs) {
+  const selectItems = mobileTabs.querySelectorAll(".select__item");
+  selectItems.forEach((item, index) => {
+    item.addEventListener("click", (e) => {
+      tabsBlog.tabsBtns[index].click();
+    });
+  });
+}

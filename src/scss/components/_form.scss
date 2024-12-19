@@ -146,6 +146,7 @@
 }
 .tabs-entry {
   &__pills {
+    padding-bottom: 10px;
     overflow-x: auto;
     &::-webkit-scrollbar {
       display: none;
