@@ -354,7 +354,7 @@ class GraphTabs {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_burger_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/burger.js */ "./src/js/components/burger.js");
-/* harmony import */ var _components_map_slider_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/map-slider.js */ "./src/js/components/map-slider.js");
+/* harmony import */ var _components_map_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/map.js */ "./src/js/components/map.js");
 /* harmony import */ var _components_tariffs_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/tariffs.js */ "./src/js/components/tariffs.js");
 /* harmony import */ var _components_schedule_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/schedule.js */ "./src/js/components/schedule.js");
 /* harmony import */ var _components_reviews_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/reviews.js */ "./src/js/components/reviews.js");
@@ -843,38 +843,28 @@ function selectedDesign(orderData) {
 
 /***/ }),
 
-/***/ "./src/js/components/map-slider.js":
-/*!*****************************************!*\
-  !*** ./src/js/components/map-slider.js ***!
-  \*****************************************/
+/***/ "./src/js/components/map.js":
+/*!**********************************!*\
+  !*** ./src/js/components/map.js ***!
+  \**********************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.mjs");
-/* harmony import */ var swiper_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/modules */ "./node_modules/swiper/modules/index.mjs");
-/* harmony import */ var _fancyapps_ui__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fancyapps/ui */ "./node_modules/@fancyapps/ui/dist/index.esm.js");
+/* harmony import */ var graph_tabs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! graph-tabs */ "./node_modules/graph-tabs/src/graph-tabs.js");
+/* harmony import */ var _fancyapps_ui__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fancyapps/ui */ "./node_modules/@fancyapps/ui/dist/index.esm.js");
 
+const tabsMap = new graph_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]("map");
 
-swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination]);
-const counter = document.querySelector(".map-slider__slide-text");
-const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".map-slider", {
-  wrapperClass: "map-slider__wrap",
-  slideClass: "map-slider__slide",
-  slidesPerView: "auto",
-  initialSlide: 1,
-  speed: 800,
-  navigation: {
-    nextEl: ".map-slider__btn--next",
-    prevEl: ".map-slider__btn--prev"
-  },
-  on: {
-    slideChange: function () {
-      counter.innerHTML = `${this.activeIndex + 1} этаж`;
-    }
-  }
-});
-
-_fancyapps_ui__WEBPACK_IMPORTED_MODULE_2__.Fancybox.bind("[data-fancybox]", {});
+_fancyapps_ui__WEBPACK_IMPORTED_MODULE_1__.Fancybox.bind("[data-fancybox]", {});
+const mobileTabs = document.querySelector("[data-select-map]");
+if (mobileTabs) {
+  const selectItems = mobileTabs.querySelectorAll(".select__item");
+  selectItems.forEach((item, index) => {
+    item.addEventListener("click", e => {
+      tabsMap.tabsBtns[index].click();
+    });
+  });
+}
 
 /***/ }),
 

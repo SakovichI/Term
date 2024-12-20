@@ -1,5 +1,5 @@
 import "./components/burger.js";
-import "./components/map-slider.js";
+import "./components/map.js";
 import "./components/tariffs.js";
 import "./components/schedule.js";
 import "./components/reviews.js";

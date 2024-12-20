@@ -2892,102 +2892,20 @@ form .tabs-entry__pills .btn:not(:disabled) {
   margin-top: -270px;
   padding-bottom: 100px;
 }
-.map__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+.map__title {
+  margin-bottom: 40px;
+}
+.map .tabs__content {
+  margin-top: 40px;
 }
 
-.map-slider {
-  position: relative;
-}
-.map-slider__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.map-slider__slide {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  gap: 20px;
-}
-.map-slider__slide a {
-  display: block;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 80%;
-  flex: 0 1 80%;
-}
-.map-slider__slide img {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: 700px;
-  -o-object-fit: contain;
-  object-fit: contain;
-}
-.map-slider__slide-text {
-  font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--dark-grey-text);
-  white-space: nowrap;
-}
-.map-slider__controls {
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 32px;
-}
-.map-slider__btn svg path {
-  -webkit-transition: 0.2s ease-in;
-  transition: 0.2s ease-in;
-}
-.map-slider__btn:disabled svg path {
-  fill: #9d9d9d;
-  -webkit-transition: 0.2s ease-in;
-  transition: 0.2s ease-in;
-}
-.map-slider__btn--prev {
-  -webkit-transform-origin: center;
-  -ms-transform-origin: center;
-  transform-origin: center;
-  -webkit-transform: rotate(-180deg) translateY(3px);
-  -ms-transform: rotate(-180deg) translateY(3px);
-  transform: rotate(-180deg) translateY(3px);
+@media all and (max-width: 600px) {
+  .map__title {
+    margin-bottom: 32px;
+  }
+  .map .tabs__content {
+    margin-top: 32px;
+  }
 }
 .tariffs {
   padding-bottom: 80px;
@@ -3499,7 +3417,7 @@ form .tabs-entry__pills .btn:not(:disabled) {
     font-size: 16px;
   }
   .blog .tabs > .select {
-    margin: 0 auto;
+    margin: 0;
   }
 }
 .blog__title {
