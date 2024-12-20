@@ -1,6 +1,6 @@
 .map {
   margin-top: -270px;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 
   &__title {
     margin-bottom: 40px;
@@ -12,6 +12,7 @@
 
 @media all and (max-width: 600px) {
   .map {
+    padding-bottom: 32px;
     &__title {
       margin-bottom: 32px;
     }

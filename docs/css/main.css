@@ -2890,7 +2890,7 @@ form .tabs-entry__pills .btn:not(:disabled) {
 }
 .map {
   margin-top: -270px;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
 .map__title {
   margin-bottom: 40px;
@@ -2900,6 +2900,9 @@ form .tabs-entry__pills .btn:not(:disabled) {
 }
 
 @media all and (max-width: 600px) {
+  .map {
+    padding-bottom: 32px;
+  }
   .map__title {
     margin-bottom: 32px;
   }
