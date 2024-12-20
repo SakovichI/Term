@@ -1,4 +1,7 @@
 .blog {
+  &__title {
+    margin-bottom: 40px;
+  }
   &__inner {
     position: relative;
   }
@@ -287,6 +290,9 @@
 
 @media all and (max-width: 900px) {
   .blog {
+    &__title {
+      margin-bottom: 32px;
+    }
     &__inner {
       position: relative;
       padding: 0 30px;
