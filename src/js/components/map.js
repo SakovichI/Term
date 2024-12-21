@@ -13,3 +13,7 @@ if (mobileTabs) {
     });
   });
 }
+
+window.addEventListener("load", () => {
+  tabsMap.switchTabs(tabsMap.tabsBtns[1]);
+});

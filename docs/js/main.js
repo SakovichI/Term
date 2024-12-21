@@ -865,6 +865,9 @@ if (mobileTabs) {
     });
   });
 }
+window.addEventListener("load", () => {
+  tabsMap.switchTabs(tabsMap.tabsBtns[1]);
+});
 
 /***/ }),
 
@@ -12155,4 +12158,3 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=main.js.map
