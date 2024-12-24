@@ -15,5 +15,10 @@ if (mobileTabs) {
 }
 
 window.addEventListener("load", () => {
-  tabsMap.switchTabs(tabsMap.tabsBtns[1]);
+  if (tabsMap.tabsBtns) {
+    tabsMap.switchTabs(tabsMap.tabsBtns[1]);
+    window.scrollTo({
+      top: -100,
+    });
+  }
 });

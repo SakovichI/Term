@@ -361,9 +361,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_news_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/news.js */ "./src/js/components/news.js");
 /* harmony import */ var _components_blog_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/blog.js */ "./src/js/components/blog.js");
 /* harmony import */ var _components_form_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/form.js */ "./src/js/components/form.js");
-/* harmony import */ var _components_utils_select_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/utils/select.js */ "./src/js/components/utils/select.js");
-/* harmony import */ var _components_utils_counter_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/utils/counter.js */ "./src/js/components/utils/counter.js");
-/* harmony import */ var _components_utils_tabs_entry_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/utils/tabs-entry.js */ "./src/js/components/utils/tabs-entry.js");
+/* harmony import */ var _components_location_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/location.js */ "./src/js/components/location.js");
+/* harmony import */ var _components_utils_select_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/utils/select.js */ "./src/js/components/utils/select.js");
+/* harmony import */ var _components_utils_counter_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/utils/counter.js */ "./src/js/components/utils/counter.js");
+/* harmony import */ var _components_utils_tabs_entry_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/utils/tabs-entry.js */ "./src/js/components/utils/tabs-entry.js");
+
 
 
 
@@ -860,6 +862,26 @@ function selectedDesign(orderData) {
 
 /***/ }),
 
+/***/ "./src/js/components/location.js":
+/*!***************************************!*\
+  !*** ./src/js/components/location.js ***!
+  \***************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+const locations = document.querySelectorAll(".location-content__row");
+const locationLink = document.querySelector(".location__link");
+if (locations.length) {
+  locations.forEach(elem => {
+    const radio = elem.querySelector(".radio__input");
+    radio.addEventListener("input", () => {
+      locationLink.setAttribute("href", radio.value);
+    });
+  });
+}
+
+/***/ }),
+
 /***/ "./src/js/components/map.js":
 /*!**********************************!*\
   !*** ./src/js/components/map.js ***!
@@ -883,7 +905,12 @@ if (mobileTabs) {
   });
 }
 window.addEventListener("load", () => {
-  tabsMap.switchTabs(tabsMap.tabsBtns[1]);
+  if (tabsMap.tabsBtns) {
+    tabsMap.switchTabs(tabsMap.tabsBtns[1]);
+    window.scrollTo({
+      top: -100
+    });
+  }
 });
 
 /***/ }),
@@ -12175,4 +12202,3 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=main.js.map

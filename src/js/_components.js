@@ -6,6 +6,7 @@ import "./components/reviews.js";
 import "./components/news.js";
 import "./components/blog.js";
 import "./components/form.js";
+import "./components/location.js";
 
 // Utils
 import "./components/utils/select.js";

@@ -252,6 +252,7 @@ a {
   visibility: hidden;
   transition: opacity var(--transition-time), visibility var(--transition-time);
 }
+
 .graph-modal__container {
   position: relative;
   width: 100%;
@@ -265,6 +266,7 @@ a {
   cursor: default;
   display: none;
 }
+
 @media (max-width: 1024px) {
   .graph-modal__container {
     width: 100%;
