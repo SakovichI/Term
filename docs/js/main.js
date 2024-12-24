@@ -463,6 +463,23 @@ if (mobileTabs) {
     });
   });
 }
+const modalSliders = document.querySelectorAll(".modal-content__slider");
+if (modalSliders.length) {
+  modalSliders.forEach(slider => {
+    const modalSlider = new swiper__WEBPACK_IMPORTED_MODULE_2__["default"](slider, {
+      wrapperClass: "modal-content__slider-wrap",
+      slideClass: "modal-content__slider-slide",
+      slidesPerView: "1",
+      loop: true,
+      spaceBetween: 24,
+      speed: 800,
+      navigation: {
+        nextEl: ".modal-content__btn--next",
+        prevEl: ".modal-content__btn--prev"
+      }
+    });
+  });
+}
 
 /***/ }),
 
@@ -678,7 +695,7 @@ function setAbonementType(elements, tabs) {
       window.localStorage.setItem("abonement", JSON.stringify(orderData));
       selectedAbonementType(orderData);
       if (isLink) {
-        window.location.href = window.location.href + "abonement-pay.html";
+        window.location.href = window.location.href + "abonement";
       } else {
         tabsState(orderData, tabs);
         setConfirmOrder(orderData);
@@ -708,7 +725,7 @@ function setCertificateType(elements, tabs) {
       window.localStorage.setItem("certificate", JSON.stringify(orderData));
       selectedCertificateType(orderData);
       if (isLink) {
-        window.location.href = window.location.href + "certificate-pay.html";
+        window.location.href = window.location.href + "certificate";
       } else {
         tabsState(orderData, tabs);
         setConfirmOrder(orderData);
@@ -12158,3 +12175,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
+//# sourceMappingURL=main.js.map

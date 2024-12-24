@@ -2742,6 +2742,74 @@ form .tabs-entry__pills .btn:not(:disabled) {
   border-radius: 20px;
 }
 
+.modal-content__slider {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  max-width: 50%;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  border-radius: 24px;
+}
+.modal-content__btn {
+  width: 32px;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.modal-content__btn:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 95%;
+  z-index: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4784313725);
+}
+.modal-content__btn svg {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  z-index: 2;
+}
+.modal-content__btn--prev {
+  left: 10px;
+}
+.modal-content__btn--next {
+  right: 10px;
+}
+.modal-content__slider-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.modal-content__slider-slide {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
 @media all and (max-width: 1050px) {
   .modal-content__title {
     margin-bottom: 16px;
@@ -2757,12 +2825,14 @@ form .tabs-entry__pills .btn:not(:disabled) {
     flex-wrap: wrap;
     gap: 32px;
   }
-  .modal-content__img {
+  .modal-content__slider {
+    max-width: 100%;
     -webkit-box-flex: 1;
     -ms-flex: 1 1 50%;
     flex: 1 1 50%;
+    border-radius: 12px;
   }
-  .modal-content__img img {
+  .modal-content__slider img {
     width: 100%;
     height: auto;
     -o-object-fit: contain;
@@ -6267,4 +6337,4 @@ form .tabs-entry__pills .btn:not(:disabled) {
     width: 70px;
     height: auto;
   }
-}
+}/*# sourceMappingURL=main.css.map */

@@ -169,7 +169,7 @@ function setAbonementType(elements, tabs) {
       selectedAbonementType(orderData);
 
       if (isLink) {
-        window.location.href = window.location.href + "abonement-pay.html";
+        window.location.href = window.location.href + "abonement";
       } else {
         tabsState(orderData, tabs);
         setConfirmOrder(orderData);
@@ -207,7 +207,7 @@ function setCertificateType(elements, tabs) {
       selectedCertificateType(orderData);
 
       if (isLink) {
-        window.location.href = window.location.href + "certificate-pay.html";
+        window.location.href = window.location.href + "certificate";
       } else {
         tabsState(orderData, tabs);
         setConfirmOrder(orderData);

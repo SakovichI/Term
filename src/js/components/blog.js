@@ -57,3 +57,22 @@ if (mobileTabs) {
     });
   });
 }
+
+const modalSliders = document.querySelectorAll(".modal-content__slider");
+
+if (modalSliders.length) {
+  modalSliders.forEach((slider) => {
+    const modalSlider = new Swiper(slider, {
+      wrapperClass: "modal-content__slider-wrap",
+      slideClass: "modal-content__slider-slide",
+      slidesPerView: "1",
+      loop: true,
+      spaceBetween: 24,
+      speed: 800,
+      navigation: {
+        nextEl: ".modal-content__btn--next",
+        prevEl: ".modal-content__btn--prev",
+      },
+    });
+  });
+}
